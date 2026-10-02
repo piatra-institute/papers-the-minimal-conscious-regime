@@ -1,0 +1,1729 @@
+schema: 1
+coverage: reviewed
+reviewed_manuscript_sha256: dbc8507769648967785ee5c6b41de5dafad516997e2b335e159acb1ca466240a
+claims:
+- id: abs-interval-lo
+  kind: computation
+  passage: Four families of modular networks each fail one invariant and pass the other three for every pass threshold
+    between 0.076 and 0.645 of a reference network, so no invariant follows from the other three.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/frac_interval/0
+    reported: '0.076'
+    units: fraction of reference value
+    conditions: 'lower end: largest failing ratio among the four families (S of the equal-rate family); N = 64 units
+      in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25 SD 0.2, region-mean coupling
+      0.7, spectral radius 0.95'
+    decimals: 3
+- id: abs-interval-hi
+  kind: computation
+  passage: Four families of modular networks each fail one invariant and pass the other three for every pass threshold
+    between 0.076 and 0.645 of a reference network, so no invariant follows from the other three.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/frac_interval/1
+    reported: '0.645'
+    units: fraction of reference value
+    conditions: 'upper end: smallest passing ratio among the four families (Q of the feedback-removed family); N
+      = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25 SD 0.2, region-mean
+      coupling 0.7, spectral radius 0.95'
+    decimals: 3
+- id: abs-ens-n
+  kind: computation
+  passage: Across 1000 random networks, between 5.5% and 50.1% of the networks that pass three invariants fail the
+    fourth, and none of six control parameters takes $Q$ below threshold on its own.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/n
+    reported: '1000'
+    units: networks
+    conditions: random modular networks, parameters drawn as in section 4.3
+    decimals: 0
+- id: abs-fgo-q
+  kind: computation
+  passage: Across 1000 random networks, between 5.5% and 50.1% of the networks that pass three invariants fail the
+    fourth, and none of six control parameters takes $Q$ below threshold on its own.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/fail_given_others_pass/Q
+    reported: 5.5%
+    units: percent of networks passing R, T, S
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 1
+    scale: 100
+- id: abs-fgo-t
+  kind: computation
+  passage: Across 1000 random networks, between 5.5% and 50.1% of the networks that pass three invariants fail the
+    fourth, and none of six control parameters takes $Q$ below threshold on its own.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/fail_given_others_pass/T
+    reported: 50.1%
+    units: percent of networks passing R, Q, S
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 1
+    scale: 100
+- id: abs-margin4
+  kind: computation
+  passage: 'A conjunction pays for its specificity in sensitivity: four independent invariants each need a margin
+    of 1.94 measurement standard deviations to reach 90% joint sensitivity, against 1.28 for one, and four tests
+    at the 94.7% sensitivity that the perturbational complexity index reached in minimally conscious patients would
+    jointly detect 80.6%.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/margin_indep
+    reported: '1.94'
+    units: measurement SD
+    conditions: Phi^-1(0.9^(1/4)), four independent Gaussian errors, equal margins
+    decimals: 2
+- id: abs-margin1
+  kind: computation
+  passage: 'A conjunction pays for its specificity in sensitivity: four independent invariants each need a margin
+    of 1.94 measurement standard deviations to reach 90% joint sensitivity, against 1.28 for one, and four tests
+    at the 94.7% sensitivity that the perturbational complexity index reached in minimally conscious patients would
+    jointly detect 80.6%.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/margin_single
+    reported: '1.28'
+    units: measurement SD
+    conditions: Phi^-1(0.9), single test
+    decimals: 2
+- id: abs-pci
+  kind: computation
+  passage: 'A conjunction pays for its specificity in sensitivity: four independent invariants each need a margin
+    of 1.94 measurement standard deviations to reach 90% joint sensitivity, against 1.28 for one, and four tests
+    at the 94.7% sensitivity that the perturbational complexity index reached in minimally conscious patients would
+    jointly detect 80.6%.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/pci_mcs_sens
+    reported: 94.7%
+    units: percent
+    conditions: 36 of 38 MCS patients (Casarotto et al. 2016)
+    decimals: 1
+    scale: 100
+- id: abs-conj
+  kind: computation
+  passage: 'A conjunction pays for its specificity in sensitivity: four independent invariants each need a margin
+    of 1.94 measurement standard deviations to reach 90% joint sensitivity, against 1.28 for one, and four tests
+    at the 94.7% sensitivity that the perturbational complexity index reached in minimally conscious patients would
+    jointly detect 80.6%.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/conj_indep
+    reported: 80.6%
+    units: percent
+    conditions: (36/38)^4, independent errors
+    decimals: 1
+    scale: 100
+- id: abs-order
+  kind: computation
+  passage: When transition times are noisy and nothing leads anything, the first of four invariants to fail precedes
+    the change in report with probability 0.8, so timing tests need order-statistic nulls.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/order_exact_loss
+    reported: '0.8'
+    units: probability
+    conditions: K/(K+1) for K = 4 exchangeable continuous transition times and one report time
+    decimals: 1
+- id: abs-40
+  kind: computation
+  passage: 'From these results we specify a crossover experiment with propofol, ketamine and dexmedetomidine: its
+    endpoints, its sample size, which holds at 40 participants only while at most 4% of experience labels are wrong,
+    and the outcomes that would refute the regime.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/participants/0.04
+    reported: '40'
+    units: participants
+    conditions: Clopper-Pearson endpoint (lower 95% bound > 0.80, power 0.8), se = sp = 0.9, 10 conscious epochs
+      per participant, ICC 0.1
+    decimals: 0
+- id: abs-f40
+  kind: computation
+  passage: 'From these results we specify a crossover experiment with propofol, ketamine and dexmedetomidine: its
+    endpoints, its sample size, which holds at 40 participants only while at most 4% of experience labels are wrong,
+    and the outcomes that would refute the regime.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/max_f_for_40
+    reported: 4%
+    units: percent label noise
+    conditions: largest grid value (0 to 5% in steps of 1%) with at most 40 participants
+    decimals: 0
+    scale: 100
+- id: src-pci
+  kind: source
+  passage: The perturbational complexity index (PCI) measures how complex the cortical response to a transcranial
+    magnetic pulse is, after binarizing the response against baseline and compressing it [@casali2013].
+  evidence:
+    citation_id: casali2013
+    locator: Abstract
+    verification_note: 'Crossref summary: a theory-derived index quantifying the complexity of the brain response
+      to a stimulus (TMS-EEG) measures the level of consciousness across wakefulness, sleep, anaesthesia and brain
+      injury.'
+    verified: true
+- id: src-casarotto
+  kind: source
+  passage: Validated on a benchmark of 150 healthy and brain-injured subjects who could report, its cutoff separated
+    conscious from unconscious conditions without error, and it detected 94.7% of 38 patients in a minimally conscious
+    state, while 9 of 43 patients in a vegetative state scored above it [@casarotto2016].
+  evidence:
+    citation_id: casarotto2016
+    locator: Abstract
+    verification_note: 'Abstract: benchmark of 150 healthy controls and communicative brain-injured subjects; empirical
+      cutoff with 100% sensitivity and specificity; 94.7% sensitivity for 38 MCS patients; 9 of 43 VS patients with
+      high PCI.'
+    verified: true
+- id: src-sarasso
+  kind: source
+  passage: In 18 volunteers, propofol produced a low-amplitude slow wave that stayed near the stimulated site, xenon
+    a high-amplitude slow wave that spread over the cortex in a stereotyped pattern, and ketamine a complex, wake-like
+    response; after propofol and xenon participants reported nothing, after ketamine long, vivid dreams [@sarasso2015].
+  evidence:
+    citation_id: sarasso2015
+    locator: Abstract
+    verification_note: 'Abstract: 18 volunteers; propofol low-amplitude local slow wave with low complexity; xenon
+      high-amplitude global stereotypical slow wave with low complexity; ketamine wake-like complex pattern; no
+      experience reported after propofol and xenon, long vivid dreams after ketamine.'
+    verified: true
+- id: src-massimini
+  kind: source
+  passage: The loss of propagation under propofol repeats what non-rapid-eye-movement sleep does to the same probe
+    [@massimini2005].
+  evidence:
+    citation_id: massimini2005
+    locator: Abstract
+    verification_note: 'Abstract: during NREM sleep the initial TMS response was stronger but rapidly extinguished
+      and did not propagate beyond the stimulation site.'
+    verified: true
+- id: src-radek
+  kind: source
+  passage: Of 93 interviews conducted during target-controlled infusion of dexmedetomidine or propofol, 84% contained
+    experiences from the unresponsive period (90% under dexmedetomidine, 74% under propofol), most of them internally
+    generated [@radek2018].
+  evidence:
+    citation_id: radek2018
+    locator: Abstract
+    verification_note: 'Abstract: of 93 interviews, 84% included experiences from unresponsive periods (dexmedetomidine
+      90%, propofol 74%); internally generated experiences (dreaming) in 86% of reports from unresponsive periods.'
+    verified: true
+- id: src-sikka
+  kind: source
+  passage: Across 157 studies and 87,866 participants, dream recall after anaesthesia ran from 40% to 80% in experimental
+    settings and from 3% to 8% in large clinical trials, and recall was unrelated to intraoperative awareness [@sikka2026].
+  evidence:
+    citation_id: sikka2026
+    locator: Abstract
+    verification_note: 'Abstract: 157 studies (1921-2024), 87,866 participants; recall often 40%-80% experimental,
+      3%-8% clinical trials; recall not associated with intraoperative awareness.'
+    verified: true
+- id: src-siclari
+  kind: source
+  passage: In sleep, awakenings with and without reported experience differ in posterior low-frequency activity,
+    and during non-rapid-eye-movement sleep that difference predicts the report in real time [@siclari2017].
+  evidence:
+    citation_id: siclari2017
+    locator: Abstract
+    verification_note: 'Abstract: reports of dream experience in NREM and REM associated with local decreases in
+      posterior low-frequency activity; monitoring the posterior hot zone in real time predicted reports during
+      NREM sleep.'
+    verified: true
+- id: src-maschke
+  kind: source
+  passage: Distance from avalanche criticality and from the edge of chaos in resting electroencephalography (EEG)
+    predicts individual PCI under propofol, xenon and ketamine [@maschke2024], and has been proposed as the organizing
+    variable for consciousness [@algom2026].
+  evidence:
+    citation_id: maschke2024
+    locator: Abstract
+    verification_note: 'Abstract: propofol, xenon, ketamine; unconsciousness characterized by distancing from avalanche
+      criticality and the edge of chaos; resting-state dynamical properties predict individual PCI.'
+    verified: true
+- id: src-milinkovic
+  kind: source
+  passage: Dynamical independence, a measure of how far a macroscopic variable evolves on its own, rises but fluctuates
+    under propofol and xenon and falls with partial preservation of structure under ketamine [@milinkovic2026].
+  evidence:
+    citation_id: milinkovic2026
+    locator: Abstract
+    verification_note: 'Abstract: propofol and xenon show more emergent but highly variable dynamic structure; ketamine
+      reduced emergence with partial preservation of macroscopic structure.'
+    verified: true
+- id: src-breyton
+  kind: source
+  passage: A whole-brain model shows perturbational complexity only in a regime of high functional fluidity that
+    can be read from spontaneous activity [@breyton2025].
+  evidence:
+    citation_id: breyton2025
+    locator: Abstract
+    verification_note: 'Abstract: perturbational complexity occurs only in a regime of high brain fluidity characterized
+      by metrics of spontaneous activity; validated against PCI in 15 subjects.'
+    verified: true
+- id: src-bayne
+  kind: source
+  passage: Conceptual work has argued that global states are points in a space of several dimensions, ill described
+    by a single level [@bayne2016; @birch2020], and that tests for consciousness need a classification and a validation
+    strategy of their own [@bayne2024].
+  evidence:
+    citation_id: bayne2016
+    locator: Abstract
+    verification_note: 'Abstract: the levels-based framework for global states is untenable; a multidimensional
+      account is developed. Birch et al. 2020: consciousness profiles; Bayne et al. 2024: C-tests, classification
+      and validation strategies.'
+    verified: true
+- id: def-regime
+  kind: definition
+  passage: A system is in the minimal conscious regime when, at once, causal influence returns between its regions
+    ($R$), its responses to perturbation are widespread and differ by site ($Q$), its own dynamics hold information
+    over time ($T$), and it has a macroscopic organization that persists ($S$).
+  rationale: Definition of the regime as the conjunction of the four invariants; operationalized by the estimators
+    of section 3 and the thresholds of section 3.6.
+- id: asm-regime
+  kind: assumption
+  passage: The regime is a hypothesis of necessity for each invariant and joint sufficiency for the four; it is
+    testable only if each invariant has an estimator, if no invariant is implied by the others, and if the cost
+    of testing a conjunction is known.
+  rationale: States the hypothesis under test; the paper does not assert it (section 7).
+- id: src-suzuki
+  kind: source
+  passage: In mice, three anaesthetics decouple the apical dendrites of layer 5 pyramidal neurons, where much cortico-cortical
+    feedback arrives, from their cell bodies [@suzuki2020; @larkum2013], a mechanism that would block feedback while
+    sparing feedforward signalling [@suzuki2020; @aru2020].
+  evidence:
+    citation_id: suzuki2020
+    locator: Abstract
+    verification_note: 'Abstract: three anaesthetics disrupt signalling along apical dendrites of layer 5 pyramidal
+      neurons in mice; anaesthesia disrupts feedback signalling with feedforward signalling relatively unchanged.
+      Larkum 2013 and Aru et al. 2020 for feedback onto apical dendrites.'
+    verified: true
+- id: src-redinbaugh
+  kind: source
+  passage: In macaques, consciousness tracks deep-layer neurons that feed back to superficial layers under the drive
+    of the central lateral thalamus, across anaesthetics and sleep [@redinbaugh2020].
+  evidence:
+    citation_id: redinbaugh2020
+    locator: Abstract
+    verification_note: 'Abstract: thalamic and deep-layer neurons most sensitive to consciousness level across anaesthetics
+      and sleep; deep-layer activity sustained by CL; deep-layer feedback to superficial layers; CL stimulation
+      restored arousal.'
+    verified: true
+- id: src-hudetz
+  kind: source
+  passage: In rats, the repertoire of intrinsic brain states falls by 20% at an anaesthetic dose of propofol [@hudetz2015].
+  evidence:
+    citation_id: hudetz2015
+    locator: Abstract
+    verification_note: 'Abstract: rats; group analysis showed a 20% reduction in the number of unique states at
+      the higher propofol dose associated with loss of consciousness.'
+    verified: true
+- id: src-koch
+  kind: source
+  passage: It is the property PCI estimates [@casali2013; @comolatti2019] and the combination of integration and
+    differentiation that motivated it [@tononi1998], which a review of neural correlates judged the more promising
+    route to a quantitative index after other candidate markers failed [@koch2016].
+  evidence:
+    citation_id: koch2016
+    locator: Abstract
+    verification_note: 'Abstract (PubMed): candidate neurophysiological markers that proved illusory; measures of
+      differentiation and integration offer more promising quantitative indices of consciousness.'
+    verified: true
+- id: src-tagliazucchi
+  kind: source
+  passage: Propofol-induced loss of consciousness reduces long-range temporal correlations in frontothalamic regions
+    [@tagliazucchi2016]; working memory in monkey prefrontal cortex is carried by brief bursts of gamma and beta
+    activity [@lundqvist2016; @lundqvist2024]; time-irreversibility of neural dynamics has been proposed as a signature
+    of conscious states [@nartallo2026].
+  evidence:
+    citation_id: tagliazucchi2016
+    locator: Abstract
+    verification_note: 'Abstract: during unconsciousness frontothalamic regions show reduced long-range temporal
+      correlations. Lundqvist et al. 2016: brief gamma and beta bursts in monkey PFC during working memory. Nartallo-Kaluarachchi
+      et al. 2026: nonequilibrium as signature of consciousness.'
+    verified: true
+- id: src-milinkovic2
+  kind: source
+  passage: Under propofol and xenon, the dynamically independent macros found in source-reconstructed EEG are more
+    emergent and more variable over time; under ketamine emergence is lower and macroscopic structure is partly
+    preserved, and the authors caution against reading the amount of emergence as a level of consciousness [@milinkovic2026].
+  evidence:
+    citation_id: milinkovic2026
+    locator: Abstract
+    verification_note: 'Abstract: propofol and xenon more emergent but highly variable structure; ketamine reduced
+      emergence, partial preservation; caution against equating emergence with level of consciousness.'
+    verified: true
+- id: src-barnett
+  kind: source
+  passage: A macroscopic variable is dynamically independent when the microscopic past adds nothing to its own past
+    in predicting its future [@barnett2023], a notion related to information-theoretic measures of causal emergence
+    [@rosas2020].
+  evidence:
+    citation_id: barnett2023
+    locator: Abstract
+    verification_note: 'Abstract: dynamical independence as a macroscopic process with its own dynamical laws; quantified
+      by an information-theoretic dynamical dependence measure; explicit for linear systems.'
+    verified: true
+- id: src-priesemann
+  kind: source
+  passage: Neuronal avalanches follow power laws [@beggs2003], in every vigilance state with state-dependent shape,
+    consistent with a brain that operates slightly below the critical point [@priesemann2013].
+  evidence:
+    citation_id: priesemann2013
+    locator: Abstract
+    verification_note: 'Abstract: avalanche distributions follow power laws in every vigilance state, differ by
+      state; small deviations to the subcritical regime. Beggs and Plenz 2003 for avalanches.'
+    verified: true
+- id: src-touboul
+  kind: source
+  passage: Power laws also arise away from criticality [@touboul2017], the experimental record is contradictory
+    [@wilting2019], and the distance to criticality has been proposed as the useful quantity [@obyrne2022].
+  evidence:
+    citation_id: touboul2017
+    locator: Abstract
+    verification_note: 'Abstracts: Touboul and Destexhe 2017 power laws away from criticality; Wilting and Priesemann
+      2019 experimental results contradictory; O''Byrne and Jerbi 2022 distance to criticality as a useful metric.'
+    verified: true
+- id: src-bastos
+  kind: source
+  passage: Thalamic core and matrix cells have been assigned distinct roles in conscious state and content [@whyte2024];
+    stimulation of the central thalamus reverses the cortical signatures of propofol in macaques [@bastos2021] and
+    the structure-bound dynamics induced by propofol, sevoflurane and ketamine, while stimulation of the ventral
+    lateral thalamus does not [@luppi2024]; propofol disrupts the functional core-matrix architecture of the human
+    thalamus [@huang2024].
+  evidence:
+    citation_id: bastos2021
+    locator: Abstract
+    verification_note: 'Abstract: thalamic stimulation awakened anaesthetized macaques and reversed the electrophysiologic
+      features of propofol unconsciousness. Luppi et al. 2024: central but not ventral lateral thalamic stimulation
+      reverses structure-constrained dynamics under propofol, sevoflurane, ketamine. Huang et al. 2024: title.'
+    verified: true
+- id: src-rodriguez
+  kind: source
+  passage: Isoflurane and sevoflurane disrupt complex I-linked respiration and reverse the ATP synthase at anaesthetic
+    doses in Drosophila [@rodriguez2025]; brain mitochondria have been reviewed as drivers of cognition and behaviour
+    [@sandi2026]; astrocytic Kir4.1 in the paraventricular thalamus modulates recovery from sevoflurane [@zhao2024],
+    and astrocyte morphology regulates state transitions under inhaled anaesthesia [@zhou2025].
+  evidence:
+    citation_id: rodriguez2025
+    locator: Abstract
+    verification_note: 'Abstract: isoflurane and sevoflurane disrupt complex I-linked respiration in Drosophila
+      thoraces, reverse the ATP synthase; doses in the anaesthetic range. Zhao et al. 2024 abstract: PVT astrocytic
+      Kir4.1 and sevoflurane recovery. Zhou et al. 2025 title.'
+    verified: true
+- id: src-tort
+  kind: source
+  passage: Breathing entrains activity across the brain and modulates faster oscillations [@tort2025].
+  evidence:
+    citation_id: tort2025
+    locator: Abstract
+    verification_note: 'Abstract: breathing-locked neuronal activity across areas; modulation of faster oscillations,
+      assembly formation and cross-area communication.'
+    verified: true
+- id: int-criticality
+  kind: interpretation
+  passage: In the model class of section 3, distance from the critical point $\rho(A) = 1$ is set by the spectral
+    radius, and the spectral radius enters only $T$; that is the formal sense in which criticality is a controller
+    here.
+  rationale: Follows from the normalization of section 3.1 (R, Q, S on the operator rescaled to a fixed spectral
+    radius); checked by the spectral-radius sweep (/controllers/gain).
+- id: src-serino
+  kind: source
+  passage: Body ownership and self-location rely on partly distinct substrates [@blanke2012; @serino2013]; metacognition
+    builds self-directed estimates of performance from transformations of uncertainty [@fleming2026] and has been
+    proposed as the basis of conscious awareness by higher-order theories [@brown2019].
+  evidence:
+    citation_id: serino2013
+    locator: Abstract
+    verification_note: 'Abstract: body ownership and self-location implemented in distinct substrates (premotor
+      cortex, temporo-parietal junction). Fleming 2026: self-evaluations from structured transformations of uncertainty.
+      Brown et al. 2019: higher-order approach.'
+    verified: true
+- id: src-gardier
+  kind: source
+  passage: Metacognitive monitoring is above chance only from about 3.5 years [@gardier2024], while the evidence
+    favours consciousness in newborns [@bayne2023; @passosferreira2024]; ketamine dreams are experiences with altered
+    self-related content [@sarasso2015]; blindsight dissociates visual processing from reported awareness [@derrien2022].
+  evidence:
+    citation_id: gardier2024
+    locator: Abstract
+    verification_note: 'Abstract: above-chance monitoring from around age 3.5. Bayne et al. 2023 and Passos-Ferreira
+      2024: evidence favours early-onset (newborn) consciousness. Derrien et al. 2022: blindsight, no reported awareness
+      with preserved processing.'
+    verified: true
+- id: src-cogitate
+  kind: source
+  passage: A preregistered adversarial test challenged key tenets of the first two [@cogitate2025].
+  evidence:
+    citation_id: cogitate2025
+    locator: Abstract
+    verification_note: 'Abstract: preregistered adversarial collaboration (n = 256); results substantially challenge
+      key tenets of IIT and GNWT.'
+    verified: true
+- id: src-kleiner
+  kind: source
+  passage: Whether a living substrate is required [@seth2025] needs a definition of what "living" adds [@kleiner2026],
+    for instance the metabolic grounding of membrane potential [@lane2026]; the estimators below do not settle that
+    question.
+  evidence:
+    citation_id: kleiner2026
+    locator: Abstract
+    verification_note: 'Abstracts: Kleiner 2026 argues biological naturalism requires an explicit definition; Lane
+      2026 grounds it in membrane potential as a readout of metabolic state; Seth 2025 target article.'
+    verified: true
+- id: def-R
+  kind: definition
+  passage: The returned part is $P_{X(i)}(\bar A^\tau - \bar A_{\rm in}^\tau) e_i$, because $\bar A_{\rm in}^\tau
+    e_i$ collects every path that never leaves $X(i)$.
+  rationale: Definition of the return component; R is its energy over the out-of-region energy (equation in section
+    3.2).
+- id: prop-R
+  kind: interpretation
+  passage: '**Proposition 1.** If the region graph of $A$ (an edge from $X$ to $Y \neq X$ when some $A_{yx} \neq
+    0$ with $x \in X$, $y \in Y$) is acyclic, then $R = 0$.'
+  rationale: Proved in section 3.2 by path counting; checked numerically (/estimators/R_acyclic_max = 0, /checks/R_zero_on_acyclic).
+- id: def-Q
+  kind: definition
+  passage: 'Integration is the share of response energy outside the pulsed region and differentiation is the dissimilarity
+    of the responses to different regions, each pair compared on the units outside both pulsed regions:'
+  rationale: Definition of I_Q, D_Q and Q = I_Q D_Q (equation in section 3.3).
+- id: prop-T
+  kind: interpretation
+  passage: '**Proposition 2.** For an exogenous input, $T$ depends on $A$ alone.'
+  rationale: 'Proved in section 3.4: conditioning on the input path leaves the autonomous process; checked numerically
+    (/checks/buffer_T_independent_of_input).'
+- id: prop-S
+  kind: interpretation
+  passage: '**Proposition 3.** For $Z_{t+1} = A Z_t + \eta_t$ with nonsingular innovation covariance, $Y = LZ$ has
+    zero dynamical dependence if and only if $L A = \tilde A L$ for some $\tilde A \in \mathbb{R}^{n \times n}$,
+    that is, if and only if the row space of $L$ is invariant under $A^\top$.'
+  rationale: Proved in section 3.5 by matching innovation coefficients; checked numerically by invariance residuals
+    and transfer entropy (/estimators/di).
+- id: def-S
+  kind: definition
+  passage: We take the macro of dimension $n$ spanned by the $n$ slowest modes, the coarsest description in time,
+    and measure whether it persists.
+  rationale: 'Definition of the S estimator: slowest left-invariant subspaces from K = 6 windows of 4000 samples,
+    chance-corrected overlap, maximum over n <= 12.'
+- id: asm-threshold
+  kind: assumption
+  passage: An invariant passes when its value is at least half of its value in a reference network.
+  rationale: Convention; the atlas reports the interval of fractions (0.076 to 0.645) over which its conclusion
+    holds.
+- id: ref-R
+  kind: computation
+  passage: Its invariants are $R = 0.067$, $Q = 0.478$ ($I_Q = 0.628$, $D_Q = 0.760$), $T = 0.539$ nats per unit
+    and $S = 0.950$, the last attained by a one-dimensional macro.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/reference/R
+    reported: '0.067'
+    units: dimensionless
+    conditions: 'N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25
+      SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 3
+- id: ref-Q
+  kind: computation
+  passage: Its invariants are $R = 0.067$, $Q = 0.478$ ($I_Q = 0.628$, $D_Q = 0.760$), $T = 0.539$ nats per unit
+    and $S = 0.950$, the last attained by a one-dimensional macro.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/reference/Q
+    reported: '0.478'
+    units: dimensionless
+    conditions: 'N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25
+      SD 0.2, region-mean coupling 0.7, spectral radius 0.95; H = 60'
+    decimals: 3
+- id: ref-IQ
+  kind: computation
+  passage: Its invariants are $R = 0.067$, $Q = 0.478$ ($I_Q = 0.628$, $D_Q = 0.760$), $T = 0.539$ nats per unit
+    and $S = 0.950$, the last attained by a one-dimensional macro.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/reference/Q_integration
+    reported: '0.628'
+    units: dimensionless
+    conditions: 'N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25
+      SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 3
+- id: ref-DQ
+  kind: computation
+  passage: Its invariants are $R = 0.067$, $Q = 0.478$ ($I_Q = 0.628$, $D_Q = 0.760$), $T = 0.539$ nats per unit
+    and $S = 0.950$, the last attained by a one-dimensional macro.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/reference/Q_differentiation
+    reported: '0.760'
+    units: dimensionless
+    conditions: 'N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25
+      SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 3
+- id: ref-T
+  kind: computation
+  passage: Its invariants are $R = 0.067$, $Q = 0.478$ ($I_Q = 0.628$, $D_Q = 0.760$), $T = 0.539$ nats per unit
+    and $S = 0.950$, the last attained by a one-dimensional macro.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/reference/T
+    reported: '0.539'
+    units: nats per unit
+    conditions: 'N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25
+      SD 0.2, region-mean coupling 0.7, spectral radius 0.95; lag sum to increment < 1e-7'
+    decimals: 3
+- id: ref-S
+  kind: computation
+  passage: Its invariants are $R = 0.067$, $Q = 0.478$ ($I_Q = 0.628$, $D_Q = 0.760$), $T = 0.539$ nats per unit
+    and $S = 0.950$, the last attained by a one-dimensional macro.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/reference/S
+    reported: '0.950'
+    units: chance-corrected overlap
+    conditions: 'N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25
+      SD 0.2, region-mean coupling 0.7, spectral radius 0.95; 6 windows of 4000 samples, n <= 12'
+    decimals: 3
+- id: r-cyc
+  kind: computation
+  passage: In 40 random modular networks with feedback edges removed, $R$ was exactly zero in floating point, as
+    Proposition 1 requires; with feedback scaled to 0.3 of its reference strength the smallest $R$ was 0.0106, and
+    in 40 nonnegative networks with sparse between-region edges the smallest was 0.0228 (Figure 1a).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/R_cyclic_min
+    reported: '0.0106'
+    units: dimensionless
+    conditions: 40 modular networks (seeds 100-139), feedback scale 0.3
+    decimals: 4
+- id: r-nonneg
+  kind: computation
+  passage: In 40 random modular networks with feedback edges removed, $R$ was exactly zero in floating point, as
+    Proposition 1 requires; with feedback scaled to 0.3 of its reference strength the smallest $R$ was 0.0106, and
+    in 40 nonnegative networks with sparse between-region edges the smallest was 0.0228 (Figure 1a).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/R_nonneg_min
+    reported: '0.0228'
+    units: dimensionless
+    conditions: 40 nonnegative networks, |Gaussian| weights, within-region full, between-region density 0.05
+    decimals: 4
+- id: di-resid
+  kind: computation
+  passage: The invariance residual $\lVert LA - \tilde A L \rVert / \lVert LA \rVert$ was at most $4.6 \times 10^{-15}$
+    for the eigen-macros and above 0.9 for every random macro.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/di_eigen_resid_max
+    reported: 4.6 \times 10^{-15}
+    units: relative norm
+    conditions: eigen-macros of dimension 1, 4, 8 of the normalized reference operator
+    significant_digits: 2
+- id: di-rand
+  kind: computation
+  passage: The invariance residual $\lVert LA - \tilde A L \rVert / \lVert LA \rVert$ was at most $4.6 \times 10^{-15}$
+    for the eigen-macros and above 0.9 for every random macro.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/di/random_8/invariance_residual
+    reported: '0.9'
+    units: relative norm
+    conditions: smallest residual among random orthonormal macros of dimension 1, 4, 8 (dimension 8)
+    decimals: 1
+- id: di-te
+  kind: computation
+  passage: The estimated transfer entropy from the micro state to the eigen-macros was at most 0.92 of its sampling
+    bias under the null (the likelihood-ratio statistic $2T \cdot \mathrm{TE}$ is asymptotically $\chi^2$ with $N
+    d$ degrees of freedom), and for random macros it exceeded that bias by a factor of at least 1271 (Figure 1b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/di_eigen_te_over_bias_max
+    reported: '0.92'
+    units: ratio to null bias N d / (2T)
+    conditions: 200,000 samples, 5 macro lags
+    decimals: 2
+- id: di-te-rand
+  kind: computation
+  passage: The estimated transfer entropy from the micro state to the eigen-macros was at most 0.92 of its sampling
+    bias under the null (the likelihood-ratio statistic $2T \cdot \mathrm{TE}$ is asymptotically $\chi^2$ with $N
+    d$ degrees of freedom), and for random macros it exceeded that bias by a factor of at least 1271 (Figure 1b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/di_random_te_over_bias_min
+    reported: '1271'
+    units: ratio to null bias
+    conditions: 200,000 samples, 5 macro lags
+    decimals: 0
+- id: buf-T
+  kind: computation
+  passage: For temporal depth, a network rescaled to spectral radius 0.3 and driven through random input weights
+    by four autoregressive inputs has $T = 0.0226$ nats per unit whatever the input.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/buffer/0/T
+    reported: '0.0226'
+    units: nats per unit
+    conditions: reference network rescaled to spectral radius 0.3
+    decimals: 4
+- id: buf-u0
+  kind: computation
+  passage: Its unconditional lagged information rises from 0.0378 for white input to 2.57 for input autocorrelation
+    0.99, above the reference network's $T$ of 0.539 (Figure 1c).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/buffer/0/T_unconditional
+    reported: '0.0378'
+    units: nats per unit
+    conditions: four AR(1) inputs, autocorrelation 0, random input weights
+    decimals: 4
+- id: buf-u99
+  kind: computation
+  passage: Its unconditional lagged information rises from 0.0378 for white input to 2.57 for input autocorrelation
+    0.99, above the reference network's $T$ of 0.539 (Figure 1c).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/buffer/4/T_unconditional
+    reported: '2.57'
+    units: nats per unit
+    conditions: four AR(1) inputs, autocorrelation 0.99
+    decimals: 2
+- id: buf-ref
+  kind: computation
+  passage: Its unconditional lagged information rises from 0.0378 for white input to 2.57 for input autocorrelation
+    0.99, above the reference network's $T$ of 0.539 (Figure 1c).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /estimators/T_reference
+    reported: '0.539'
+    units: nats per unit
+    conditions: 'N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8), between-region density 0.25
+      SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 3
+- id: fam-noR-Q
+  kind: computation
+  passage: Removing feedback edges and doubling forward ones makes the region graph acyclic, so $R = 0$, while $Q$
+    keeps 0.645 of its reference value.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/ratios/no_R/Q
+    reported: '0.645'
+    units: fraction of reference
+    conditions: feedback edges removed, between-region strength 1.6
+    decimals: 3
+- id: fam-noQ-DQ
+  kind: computation
+  passage: Adding an all-to-all coupling of strength $8/N$ per entry and raising the spectral radius to 0.995 makes
+    the response to every site the same global mode ($D_Q = 0.016$), so $Q$ falls to 0.028 of reference while $T$
+    rises.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_Q/Q_differentiation
+    reported: '0.016'
+    units: dimensionless
+    conditions: all-to-all coupling 8/N per entry, spectral radius 0.995
+    decimals: 3
+- id: fam-noQ-Q
+  kind: computation
+  passage: Adding an all-to-all coupling of strength $8/N$ per entry and raising the spectral radius to 0.995 makes
+    the response to every site the same global mode ($D_Q = 0.016$), so $Q$ falls to 0.028 of reference while $T$
+    rises.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/ratios/no_Q/Q
+    reported: '0.028'
+    units: fraction of reference
+    conditions: all-to-all coupling 8/N per entry, spectral radius 0.995
+    decimals: 3
+- id: fam-noT
+  kind: computation
+  passage: Lowering the spectral radius to 0.3 leaves $R$ and $Q$ unchanged by construction and $S$ unchanged up
+    to estimation noise, and takes $T$ to 0.042 of reference.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/ratios/no_T/T
+    reported: '0.042'
+    units: fraction of reference
+    conditions: spectral radius 0.3
+    decimals: 3
+- id: fam-noS
+  kind: computation
+  passage: A scaled random orthogonal operator, whose modes all decay at the same rate, has $S$ at 0.076 of reference
+    while its $R$, $Q$ and $T$ exceed the reference values.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/ratios/no_S/S
+    reported: '0.076'
+    units: fraction of reference
+    conditions: scaled random orthogonal operator, spectral radius 0.95
+    decimals: 3
+- id: tab-noR-Q
+  kind: computation
+  passage: '| feedback removed | 0 | 0.308 | 1.050 | 0.927 | $R$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_R/Q
+    reported: '0.308'
+    units: dimensionless
+    conditions: feedback-removed family, seed 1
+    decimals: 3
+- id: tab-noR-T
+  kind: computation
+  passage: '| feedback removed | 0 | 0.308 | 1.050 | 0.927 | $R$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_R/T
+    reported: '1.050'
+    units: nats per unit
+    conditions: feedback-removed family, seed 1
+    decimals: 3
+- id: tab-noR-S
+  kind: computation
+  passage: '| feedback removed | 0 | 0.308 | 1.050 | 0.927 | $R$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_R/S
+    reported: '0.927'
+    units: overlap
+    conditions: feedback-removed family, seed 1
+    decimals: 3
+- id: tab-noQ-R
+  kind: computation
+  passage: '| global mode | 0.097 | 0.013 | 1.263 | 0.959 | $Q$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_Q/R
+    reported: '0.097'
+    units: dimensionless
+    conditions: global-mode family, seed 1
+    decimals: 3
+- id: tab-noQ-Q
+  kind: computation
+  passage: '| global mode | 0.097 | 0.013 | 1.263 | 0.959 | $Q$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_Q/Q
+    reported: '0.013'
+    units: dimensionless
+    conditions: global-mode family, seed 1
+    decimals: 3
+- id: tab-noQ-T
+  kind: computation
+  passage: '| global mode | 0.097 | 0.013 | 1.263 | 0.959 | $Q$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_Q/T
+    reported: '1.263'
+    units: nats per unit
+    conditions: global-mode family, seed 1
+    decimals: 3
+- id: tab-noQ-S
+  kind: computation
+  passage: '| global mode | 0.097 | 0.013 | 1.263 | 0.959 | $Q$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_Q/S
+    reported: '0.959'
+    units: overlap
+    conditions: global-mode family, seed 1
+    decimals: 3
+- id: tab-noT-T
+  kind: computation
+  passage: '| fast decay | 0.067 | 0.478 | 0.023 | 0.946 | $T$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_T/T
+    reported: '0.023'
+    units: nats per unit
+    conditions: fast-decay family, seed 1
+    decimals: 3
+- id: tab-noT-S
+  kind: computation
+  passage: '| fast decay | 0.067 | 0.478 | 0.023 | 0.946 | $T$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_T/S
+    reported: '0.946'
+    units: overlap
+    conditions: fast-decay family, seed 1
+    decimals: 3
+- id: tab-noS-R
+  kind: computation
+  passage: '| equal rates | 0.114 | 0.871 | 6.986 | 0.072 | $S$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_S/R
+    reported: '0.114'
+    units: dimensionless
+    conditions: equal-rate family, seed 1001
+    decimals: 3
+- id: tab-noS-Q
+  kind: computation
+  passage: '| equal rates | 0.114 | 0.871 | 6.986 | 0.072 | $S$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_S/Q
+    reported: '0.871'
+    units: dimensionless
+    conditions: equal-rate family, seed 1001
+    decimals: 3
+- id: tab-noS-T
+  kind: computation
+  passage: '| equal rates | 0.114 | 0.871 | 6.986 | 0.072 | $S$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_S/T
+    reported: '6.986'
+    units: nats per unit
+    conditions: equal-rate family, seed 1001
+    decimals: 3
+- id: tab-noS-S
+  kind: computation
+  passage: '| equal rates | 0.114 | 0.871 | 6.986 | 0.072 | $S$ |'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/values/no_S/S
+    reported: '0.072'
+    units: overlap
+    conditions: equal-rate family, seed 1001
+    decimals: 3
+- id: seed-noR
+  kind: computation
+  passage: At the threshold of one half it held for 19 of 20 random seeds in the feedback-removed family (the exception
+    fell to 0.488 of reference on $Q$) and for all 20 seeds in the other three.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/seed_success/no_R
+    reported: '19'
+    units: seeds of 20
+    conditions: seeds 1-20, each family against the reference of the same seed
+    decimals: 0
+- id: seed-noQ
+  kind: computation
+  passage: At the threshold of one half it held for 19 of 20 random seeds in the feedback-removed family (the exception
+    fell to 0.488 of reference on $Q$) and for all 20 seeds in the other three.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /atlas/seed_success/no_Q
+    reported: '20'
+    units: seeds of 20
+    conditions: seeds 1-20
+    decimals: 0
+- id: ens-conj
+  kind: computation
+  passage: Of these, 222 passed all four invariants at the half-reference thresholds (Figure 2c).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/n_conjunction
+    reported: '222'
+    units: networks of 1000
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: ens-rho
+  kind: computation
+  passage: The largest rank correlation between two invariants was 0.641 ($Q$ with $T$), and the other three invariants
+    explained at most 61.9% of the rank variance of any one in a linear regression (the maximum, again for $Q$;
+    28.3% for $S$ and 29.8% for $R$).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/max_abs_offdiag
+    reported: '0.641'
+    units: Spearman correlation
+    conditions: 1000 random networks
+    decimals: 3
+- id: ens-r2
+  kind: computation
+  passage: The largest rank correlation between two invariants was 0.641 ($Q$ with $T$), and the other three invariants
+    explained at most 61.9% of the rank variance of any one in a linear regression (the maximum, again for $Q$;
+    28.3% for $S$ and 29.8% for $R$).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/max_rank_r2
+    reported: 61.9%
+    units: percent of rank variance
+    conditions: linear regression of ranks on the ranks of the other three
+    decimals: 1
+    scale: 100
+- id: ens-r2S
+  kind: computation
+  passage: The largest rank correlation between two invariants was 0.641 ($Q$ with $T$), and the other three invariants
+    explained at most 61.9% of the rank variance of any one in a linear regression (the maximum, again for $Q$;
+    28.3% for $S$ and 29.8% for $R$).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/rank_r2_from_others/S
+    reported: 28.3%
+    units: percent of rank variance
+    conditions: as above, for S
+    decimals: 1
+    scale: 100
+- id: ens-r2R
+  kind: computation
+  passage: The largest rank correlation between two invariants was 0.641 ($Q$ with $T$), and the other three invariants
+    explained at most 61.9% of the rank variance of any one in a linear regression (the maximum, again for $Q$;
+    28.3% for $S$ and 29.8% for $R$).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/rank_r2_from_others/R
+    reported: 29.8%
+    units: percent of rank variance
+    conditions: as above, for R
+    decimals: 1
+    scale: 100
+- id: fgo-R
+  kind: computation
+  passage: Among networks passing the other three, $R$ failed in 14.9% (of 261), $Q$ in 5.5% (of 235), $T$ in 50.1%
+    (of 445) and $S$ in 17.2% (of 268).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/fail_given_others_pass/R
+    reported: 14.9%
+    units: percent
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 1
+    scale: 100
+- id: fgo-Rn
+  kind: computation
+  passage: Among networks passing the other three, $R$ failed in 14.9% (of 261), $Q$ in 5.5% (of 235), $T$ in 50.1%
+    (of 445) and $S$ in 17.2% (of 268).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/n_others_pass/R
+    reported: '261'
+    units: networks
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: fgo-Q
+  kind: computation
+  passage: Among networks passing the other three, $R$ failed in 14.9% (of 261), $Q$ in 5.5% (of 235), $T$ in 50.1%
+    (of 445) and $S$ in 17.2% (of 268).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/fail_given_others_pass/Q
+    reported: 5.5%
+    units: percent
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 1
+    scale: 100
+- id: fgo-Qn
+  kind: computation
+  passage: Among networks passing the other three, $R$ failed in 14.9% (of 261), $Q$ in 5.5% (of 235), $T$ in 50.1%
+    (of 445) and $S$ in 17.2% (of 268).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/n_others_pass/Q
+    reported: '235'
+    units: networks
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: fgo-T
+  kind: computation
+  passage: Among networks passing the other three, $R$ failed in 14.9% (of 261), $Q$ in 5.5% (of 235), $T$ in 50.1%
+    (of 445) and $S$ in 17.2% (of 268).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/fail_given_others_pass/T
+    reported: 50.1%
+    units: percent
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 1
+    scale: 100
+- id: fgo-Tn
+  kind: computation
+  passage: Among networks passing the other three, $R$ failed in 14.9% (of 261), $Q$ in 5.5% (of 235), $T$ in 50.1%
+    (of 445) and $S$ in 17.2% (of 268).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/n_others_pass/T
+    reported: '445'
+    units: networks
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: fgo-S
+  kind: computation
+  passage: Among networks passing the other three, $R$ failed in 14.9% (of 261), $Q$ in 5.5% (of 235), $T$ in 50.1%
+    (of 445) and $S$ in 17.2% (of 268).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/fail_given_others_pass/S
+    reported: 17.2%
+    units: percent
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 1
+    scale: 100
+- id: fgo-Sn
+  kind: computation
+  passage: Among networks passing the other three, $R$ failed in 14.9% (of 261), $Q$ in 5.5% (of 235), $T$ in 50.1%
+    (of 445) and $S$ in 17.2% (of 268).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/n_others_pass/S
+    reported: '268'
+    units: networks
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: qpass
+  kind: computation
+  passage: Among networks that pass $Q$, 64.1% fail at least one other invariant (Figure 2d).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/conj_fail_given_pass/Q
+    reported: 64.1%
+    units: percent
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 1
+    scale: 100
+- id: ctl-fb
+  kind: computation
+  passage: Scaling the feedback edges takes $R$ across its threshold and no other invariant ($Q$ stays at or above
+    0.508 of reference).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /controllers/feedback/range/Q/0
+    reported: '0.508'
+    units: fraction of reference
+    conditions: feedback scale swept 0 to 1 in 11 steps
+    decimals: 3
+- id: ctl-slow-lo
+  kind: computation
+  passage: Between-region coupling takes $R$ and $Q$ across together, all-to-all coupling takes $Q$ and $T$ together,
+    and region-mean coupling keeps $R$, $Q$ and $T$ between 0.72 and 1.48 of their reference values without taking
+    any across.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /controllers/slow/range/Q/0
+    reported: '0.72'
+    units: fraction of reference
+    conditions: region-mean coupling swept 0 to 2.5; minimum over R, Q, T is Q
+    decimals: 2
+- id: ctl-slow-hi
+  kind: computation
+  passage: Between-region coupling takes $R$ and $Q$ across together, all-to-all coupling takes $Q$ and $T$ together,
+    and region-mean coupling keeps $R$, $Q$ and $T$ between 0.72 and 1.48 of their reference values without taking
+    any across.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /controllers/slow/range/T/1
+    reported: '1.48'
+    units: fraction of reference
+    conditions: region-mean coupling swept 0 to 2.5; maximum over R, Q, T is T
+    decimals: 2
+- id: single-Q
+  kind: computation
+  passage: The ensemble agrees, with 13 networks failing $Q$ alone against 39, 46 and 223 failing $R$, $S$ and $T$
+    alone.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/single_failures/Q
+    reported: '13'
+    units: networks of 1000
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: single-R
+  kind: computation
+  passage: The ensemble agrees, with 13 networks failing $Q$ alone against 39, 46 and 223 failing $R$, $S$ and $T$
+    alone.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/single_failures/R
+    reported: '39'
+    units: networks of 1000
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: single-S
+  kind: computation
+  passage: The ensemble agrees, with 13 networks failing $Q$ alone against 39, 46 and 223 failing $R$, $S$ and $T$
+    alone.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/single_failures/S
+    reported: '46'
+    units: networks of 1000
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: single-T
+  kind: computation
+  passage: The ensemble agrees, with 13 networks failing $Q$ alone against 39, 46 and 223 failing $R$, $S$ and $T$
+    alone.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /ensemble/single_failures/T
+    reported: '223'
+    units: networks of 1000
+    conditions: 'pass threshold 0.5 x reference value; N = 64 units in 8 regions; reference: within-region SD 0.5/sqrt(8),
+      between-region density 0.25 SD 0.2, region-mean coupling 0.7, spectral radius 0.95'
+    decimals: 0
+- id: int-controllers
+  kind: interpretation
+  passage: 'No parameter takes $Q$ across on its own: weakening between-region coupling takes $R$ with it and strengthening
+    the global mode takes $T$ with it.'
+  rationale: 'Read from /controllers/*/crossed: feedback [R], between [R, Q], global [Q, T], slow [], iso [S], gain
+    [T].'
+- id: m4
+  kind: computation
+  passage: With independent errors the conjunction detects it with probability $\prod_k \Phi(d_k)$, so 90% joint
+    sensitivity with equal margins needs $d = \Phi^{-1}(0.9^{1/4}) = 1.94$ standard deviations per invariant, against
+    1.28 for a single test.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/margin_indep
+    reported: '1.94'
+    units: measurement SD
+    conditions: four independent Gaussian errors
+    decimals: 2
+- id: m1
+  kind: computation
+  passage: With independent errors the conjunction detects it with probability $\prod_k \Phi(d_k)$, so 90% joint
+    sensitivity with equal margins needs $d = \Phi^{-1}(0.9^{1/4}) = 1.94$ standard deviations per invariant, against
+    1.28 for a single test.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/margin_single
+    reported: '1.28'
+    units: measurement SD
+    conditions: single test
+    decimals: 2
+- id: m025
+  kind: computation
+  passage: '[@dunnett1955], and the required margin falls to 1.91 at $r = 0.25$, 1.84 at $r = 0.5$ and 1.57 at $r
+    = 0.9$ (Figure 4a); a Monte Carlo estimate with 400,000 draws at $r = 0.5$ gave 0.9002 for a nominal 0.9.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/margin_corr/0.25
+    reported: '1.91'
+    units: measurement SD
+    conditions: exchangeable error correlation 0.25, Gauss-Hermite quadrature
+    decimals: 2
+- id: m05
+  kind: computation
+  passage: '[@dunnett1955], and the required margin falls to 1.91 at $r = 0.25$, 1.84 at $r = 0.5$ and 1.57 at $r
+    = 0.9$ (Figure 4a); a Monte Carlo estimate with 400,000 draws at $r = 0.5$ gave 0.9002 for a nominal 0.9.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/margin_corr/0.5
+    reported: '1.84'
+    units: measurement SD
+    conditions: exchangeable error correlation 0.5
+    decimals: 2
+- id: m09
+  kind: computation
+  passage: '[@dunnett1955], and the required margin falls to 1.91 at $r = 0.25$, 1.84 at $r = 0.5$ and 1.57 at $r
+    = 0.9$ (Figure 4a); a Monte Carlo estimate with 400,000 draws at $r = 0.5$ gave 0.9002 for a nominal 0.9.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/margin_corr/0.9
+    reported: '1.57'
+    units: measurement SD
+    conditions: exchangeable error correlation 0.9
+    decimals: 2
+- id: mc
+  kind: computation
+  passage: '[@dunnett1955], and the required margin falls to 1.91 at $r = 0.25$, 1.84 at $r = 0.5$ and 1.57 at $r
+    = 0.9$ (Figure 4a); a Monte Carlo estimate with 400,000 draws at $r = 0.5$ gave 0.9002 for a nominal 0.9.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/mc_orthant_r05
+    reported: '0.9002'
+    units: probability
+    conditions: 400,000 Monte Carlo draws at the r = 0.5 margin
+    decimals: 4
+- id: ci-lo
+  kind: computation
+  passage: PCI detected 94.7% of 38 minimally conscious patients [@casarotto2016], 36 of 38, with exact 95% interval
+    82.3% to 99.4% [@clopper1934].
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/pci_mcs_ci/0
+    reported: 82.3%
+    units: percent
+    conditions: Clopper-Pearson, 36 of 38
+    decimals: 1
+    scale: 100
+- id: ci-hi
+  kind: computation
+  passage: PCI detected 94.7% of 38 minimally conscious patients [@casarotto2016], 36 of 38, with exact 95% interval
+    82.3% to 99.4% [@clopper1934].
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/pci_mcs_ci/1
+    reported: 99.4%
+    units: percent
+    conditions: Clopper-Pearson, 36 of 38
+    decimals: 1
+    scale: 100
+- id: conj-ind
+  kind: computation
+  passage: Four independent tests with that sensitivity would jointly detect 80.6% of such patients, and 84.9% with
+    error correlation 0.5.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/conj_indep
+    reported: 80.6%
+    units: percent
+    conditions: (36/38)^4
+    decimals: 1
+    scale: 100
+- id: conj-r05
+  kind: computation
+  passage: Four independent tests with that sensitivity would jointly detect 80.6% of such patients, and 84.9% with
+    error correlation 0.5.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/conj_r05
+    reported: 84.9%
+    units: percent
+    conditions: exchangeable error correlation 0.5, marginal 36/38
+    decimals: 1
+    scale: 100
+- id: ln05
+  kind: computation
+  passage: If a fraction $f$ of epochs labelled conscious are unconscious, a test with sensitivity 0.9 and specificity
+    0.9 shows an observed sensitivity of $(1 - f) \cdot 0.9 + f \cdot 0.1$, which is 0.86 at $f = 0.05$ and 0.82
+    at $f = 0.1$; the bias can be corrected when $f$ is known [@rogan1978].
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/label_noise/0.05
+    reported: '0.86'
+    units: observed sensitivity
+    conditions: se = sp = 0.9
+    decimals: 2
+- id: ln10
+  kind: computation
+  passage: If a fraction $f$ of epochs labelled conscious are unconscious, a test with sensitivity 0.9 and specificity
+    0.9 shows an observed sensitivity of $(1 - f) \cdot 0.9 + f \cdot 0.1$, which is 0.86 at $f = 0.05$ and 0.82
+    at $f = 0.1$; the bias can be corrected when $f$ is known [@rogan1978].
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/label_noise/0.1
+    reported: '0.82'
+    units: observed sensitivity
+    conditions: se = sp = 0.9
+    decimals: 2
+- id: n0
+  kind: computation
+  passage: With exact binomial calculations the number of independent conscious epochs required is 94 with clean
+    labels, 112, 135, 170 and 210 at label-noise rates of 1%, 2%, 3% and 4%, 271 at 5% and 2476 at 10% (Figure 4b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/n_eff/0.0
+    reported: '94'
+    units: epochs
+    conditions: one-sided 95% Clopper-Pearson lower bound > 0.80, power >= 0.8 for 51 consecutive n, se = sp = 0.9,
+      f = 0
+    decimals: 0
+- id: n1
+  kind: computation
+  passage: With exact binomial calculations the number of independent conscious epochs required is 94 with clean
+    labels, 112, 135, 170 and 210 at label-noise rates of 1%, 2%, 3% and 4%, 271 at 5% and 2476 at 10% (Figure 4b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/n_eff/0.01
+    reported: '112'
+    units: epochs
+    conditions: one-sided 95% Clopper-Pearson lower bound > 0.80, power >= 0.8 for 51 consecutive n, se = sp = 0.9,
+      f = 0.01
+    decimals: 0
+- id: n2
+  kind: computation
+  passage: With exact binomial calculations the number of independent conscious epochs required is 94 with clean
+    labels, 112, 135, 170 and 210 at label-noise rates of 1%, 2%, 3% and 4%, 271 at 5% and 2476 at 10% (Figure 4b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/n_eff/0.02
+    reported: '135'
+    units: epochs
+    conditions: one-sided 95% Clopper-Pearson lower bound > 0.80, power >= 0.8 for 51 consecutive n, se = sp = 0.9,
+      f = 0.02
+    decimals: 0
+- id: n3
+  kind: computation
+  passage: With exact binomial calculations the number of independent conscious epochs required is 94 with clean
+    labels, 112, 135, 170 and 210 at label-noise rates of 1%, 2%, 3% and 4%, 271 at 5% and 2476 at 10% (Figure 4b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/n_eff/0.03
+    reported: '170'
+    units: epochs
+    conditions: one-sided 95% Clopper-Pearson lower bound > 0.80, power >= 0.8 for 51 consecutive n, se = sp = 0.9,
+      f = 0.03
+    decimals: 0
+- id: n4
+  kind: computation
+  passage: With exact binomial calculations the number of independent conscious epochs required is 94 with clean
+    labels, 112, 135, 170 and 210 at label-noise rates of 1%, 2%, 3% and 4%, 271 at 5% and 2476 at 10% (Figure 4b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/n_eff/0.04
+    reported: '210'
+    units: epochs
+    conditions: one-sided 95% Clopper-Pearson lower bound > 0.80, power >= 0.8 for 51 consecutive n, se = sp = 0.9,
+      f = 0.04
+    decimals: 0
+- id: n5
+  kind: computation
+  passage: With exact binomial calculations the number of independent conscious epochs required is 94 with clean
+    labels, 112, 135, 170 and 210 at label-noise rates of 1%, 2%, 3% and 4%, 271 at 5% and 2476 at 10% (Figure 4b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/n_eff/0.05
+    reported: '271'
+    units: epochs
+    conditions: one-sided 95% Clopper-Pearson lower bound > 0.80, power >= 0.8 for 51 consecutive n, se = sp = 0.9,
+      f = 0.05
+    decimals: 0
+- id: n10
+  kind: computation
+  passage: With exact binomial calculations the number of independent conscious epochs required is 94 with clean
+    labels, 112, 135, 170 and 210 at label-noise rates of 1%, 2%, 3% and 4%, 271 at 5% and 2476 at 10% (Figure 4b).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/n_eff_f10
+    reported: '2476'
+    units: epochs
+    conditions: one-sided 95% Clopper-Pearson lower bound > 0.80, power >= 0.8 for 51 consecutive n, se = sp = 0.9,
+      f = 0.1
+    decimals: 0
+- id: nratio
+  kind: computation
+  passage: A label-noise rate of 5% multiplies the required sample by 2.88.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/n_eff_ratio_f05
+    reported: '2.88'
+    units: ratio
+    conditions: 271 / 94
+    decimals: 2
+- id: de
+  kind: computation
+  passage: 'Epochs cluster within participants: with 10 conscious epochs per participant and intraclass correlation
+    0.1, the design effect $1 + (m - 1)\rho_{\rm ICC}$ is 1.9 [@kish1965; @killip2004], and the participants needed
+    rise from 18 with clean labels to 52 at 5% label noise.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/design_effect
+    reported: '1.9'
+    units: dimensionless
+    conditions: m = 10, ICC = 0.1
+    decimals: 1
+- id: pp0
+  kind: computation
+  passage: 'Epochs cluster within participants: with 10 conscious epochs per participant and intraclass correlation
+    0.1, the design effect $1 + (m - 1)\rho_{\rm ICC}$ is 1.9 [@kish1965; @killip2004], and the participants needed
+    rise from 18 with clean labels to 52 at 5% label noise.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/participants/0.0
+    reported: '18'
+    units: participants
+    conditions: n_eff x design effect / 10, f = 0
+    decimals: 0
+- id: pp5
+  kind: computation
+  passage: 'Epochs cluster within participants: with 10 conscious epochs per participant and intraclass correlation
+    0.1, the design effect $1 + (m - 1)\rho_{\rm ICC}$ is 1.9 [@kish1965; @killip2004], and the participants needed
+    rise from 18 with clean labels to 52 at 5% label noise.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/participants/0.05
+    reported: '52'
+    units: participants
+    conditions: f = 0.05
+    decimals: 0
+- id: f40
+  kind: computation
+  passage: A confirmatory cohort of 40 participants meets the endpoint up to a label-noise rate of 4%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/max_f_for_40
+    reported: 4%
+    units: percent
+    conditions: largest f on the 1% grid with at most 40 participants
+    decimals: 0
+    scale: 100
+- id: ab0
+  kind: computation
+  passage: The pairs needed for 80% power are 9 at $c = 0$, 14 at $c = 0.25$, 26 at $c = 0.5$ and 75 at $c = 0.75$
+    (Figure 4c).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/ablation/0.0
+    reported: '9'
+    units: pairs
+    conditions: exact conditional McNemar, one-sided alpha 0.0125, report rate 0.9 (all pass) vs 0.05 (true failure),
+      c = 0
+    decimals: 0
+- id: ab25
+  kind: computation
+  passage: The pairs needed for 80% power are 9 at $c = 0$, 14 at $c = 0.25$, 26 at $c = 0.5$ and 75 at $c = 0.75$
+    (Figure 4c).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/ablation/0.25
+    reported: '14'
+    units: pairs
+    conditions: exact conditional McNemar, one-sided alpha 0.0125, report rate 0.9 (all pass) vs 0.05 (true failure),
+      c = 0.25
+    decimals: 0
+- id: ab50
+  kind: computation
+  passage: The pairs needed for 80% power are 9 at $c = 0$, 14 at $c = 0.25$, 26 at $c = 0.5$ and 75 at $c = 0.75$
+    (Figure 4c).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/ablation/0.5
+    reported: '26'
+    units: pairs
+    conditions: exact conditional McNemar, one-sided alpha 0.0125, report rate 0.9 (all pass) vs 0.05 (true failure),
+      c = 0.5
+    decimals: 0
+- id: ab75
+  kind: computation
+  passage: The pairs needed for 80% power are 9 at $c = 0$, 14 at $c = 0.25$, 26 at $c = 0.5$ and 75 at $c = 0.75$
+    (Figure 4c).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/ablation/0.75
+    reported: '75'
+    units: pairs
+    conditions: exact conditional McNemar, one-sided alpha 0.0125, report rate 0.9 (all pass) vs 0.05 (true failure),
+      c = 0.75
+    decimals: 0
+- id: ord-mc-l
+  kind: computation
+  passage: If the four invariant transitions and the report transition occur at the same true time with independent,
+    identically distributed errors, the earliest of five exchangeable times is equally likely to be any of them,
+    so the first invariant failure precedes the report change with probability $4/5$ and the last recovery precedes
+    it with probability $1/5$ [@david2003]; Monte Carlo estimates were 0.8007 and 0.2003.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/order_null_loss
+    reported: '0.8007'
+    units: probability
+    conditions: 400,000 draws, iid standard normal times
+    decimals: 4
+- id: ord-mc-r
+  kind: computation
+  passage: If the four invariant transitions and the report transition occur at the same true time with independent,
+    identically distributed errors, the earliest of five exchangeable times is equally likely to be any of them,
+    so the first invariant failure precedes the report change with probability $4/5$ and the last recovery precedes
+    it with probability $1/5$ [@david2003]; Monte Carlo estimates were 0.8007 and 0.2003.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/order_null_recovery
+    reported: '0.2003'
+    units: probability
+    conditions: 400,000 draws
+    decimals: 4
+- id: ord-sig2
+  kind: computation
+  passage: When the report time is twice as noisy as the invariant times the first probability is 0.688.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/order_null_loss_sigC2
+    reported: '0.688'
+    units: probability
+    conditions: 400,000 draws, report SD = 2 x invariant SD
+    decimals: 3
+- id: emax
+  kind: computation
+  passage: The latest of four noisy estimates is on average 1.03 error standard deviations after the true time.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/emax4
+    reported: '1.03'
+    units: error SD
+    conditions: mean of the maximum of 4 standard normals, 400,000 draws
+    decimals: 2
+- id: pw25
+  kind: computation
+  passage: With 120 induction transitions (40 participants, three drugs) and the order-statistic null of 0.8, a
+    true lead of 0.25, 0.5 and 1 error standard deviation is detected with power 0.40, 0.88 and 1.00 (Figure 4d).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/order_power/0.25/power
+    reported: '0.40'
+    units: power
+    conditions: binomial test, alpha 0.05, 120 transitions, lead 0.25 SD
+    decimals: 2
+- id: pw50
+  kind: computation
+  passage: With 120 induction transitions (40 participants, three drugs) and the order-statistic null of 0.8, a
+    true lead of 0.25, 0.5 and 1 error standard deviation is detected with power 0.40, 0.88 and 1.00 (Figure 4d).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/order_power/0.5/power
+    reported: '0.88'
+    units: power
+    conditions: lead 0.5 SD
+    decimals: 2
+- id: pw100
+  kind: computation
+  passage: With 120 induction transitions (40 participants, three drugs) and the order-statistic null of 0.8, a
+    true lead of 0.25, 0.5 and 1 error standard deviation is detected with power 0.40, 0.88 and 1.00 (Figure 4d).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /statistics/order_power/1.0/power
+    reported: '1.00'
+    units: power
+    conditions: lead 1 SD
+    decimals: 2
+- id: int-timing
+  kind: interpretation
+  passage: A requirement that all four invariants fail before experience is lost is stronger than necessity implies.
+  rationale: 'Logic of a conjunction: the regime is lost at the first failure; necessity of each invariant constrains
+    only that first failure.'
+- id: int-corr
+  kind: interpretation
+  passage: Correlated errors make the conjunction cheaper, because the four tests then fail together, and they make
+    it less informative for the same reason.
+  rationale: 'Read from the margin curve (/statistics/margin_curve): required margin decreases with error correlation.'
+- id: src-mcr-drugs
+  kind: source
+  passage: 'The three agents differ in mechanism and in the relation between responsiveness and experience: dexmedetomidine
+    leaves many participants arousable and reporting experience [@radek2018], ketamine produces unresponsiveness
+    with vivid dreams and wake-like complexity, and propofol at deeper levels leaves neither [@sarasso2015].'
+  evidence:
+    citation_id: radek2018
+    locator: Abstract
+    verification_note: 'Abstract: 18 of 23 dexmedetomidine participants arousable; 90% of dexmedetomidine interviews
+      with experiences. Sarasso et al. 2015: ketamine unresponsiveness with dreams and complex responses; propofol
+      low complexity and no reports.'
+    verified: true
+- id: norm-design
+  kind: normative
+  passage: A discovery cohort of 20 participants fixes the parcellation, the autoregressive order, the window lengths,
+    the reference values and the thresholds; these are then frozen and preregistered for a confirmation cohort of
+    40, in the way design, predictions and their interpretation were preregistered in the adversarial test of integrated
+    information and global workspace theories [@cogitate2025].
+  rationale: 'Design recommendation: parameters frozen on a discovery cohort and preregistered for a confirmation
+    cohort, with preregistration of design, predictions and interpretation as in the Cogitate Consortium (2025);
+    cohort sizes evaluated in section 5.2.'
+- id: norm-kill
+  kind: normative
+  passage: '*Outcomes that refute the regime.* (1) A reproducible class of conscious epochs outside the regime.'
+  rationale: Refutation criteria adopted in advance; each corresponds to a test in section 5.
+- id: int-limits
+  kind: interpretation
+  passage: The paper does not show that $R$, $Q$, $T$ and $S$ are the necessary conditions of consciousness.
+  rationale: 'Scope statement: results concern a model class and the statistics of the test.'
+runs:
+- id: model
+  record: verification/model.json
+  required: true

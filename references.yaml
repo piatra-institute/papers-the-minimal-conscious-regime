@@ -1,0 +1,1687 @@
+# CSL references with stable IDs; cite using Pandoc [@id] syntax.
+# Every entry with a DOI was resolved through doi.org content negotiation (CSL-JSON) on 2026-10-02;
+# corrections to the records are listed in sources.md.
+references:
+- id: algom2026
+  type: article-journal
+  title: 'The ConCrit framework: Critical brain dynamics as a unifying mechanistic framework for theories
+    of consciousness'
+  author:
+  - family: Algom
+    given: Inbal
+  - family: Shriki
+    given: Oren
+  container-title: Neuroscience & Biobehavioral Reviews
+  volume: '180'
+  page: '106483'
+  DOI: 10.1016/j.neubiorev.2025.106483
+  issued:
+    date-parts:
+    - - 2026
+- id: aru2020
+  type: article-journal
+  title: Cellular Mechanisms of Conscious Processing
+  author:
+  - family: Aru
+    given: Jaan
+  - family: Suzuki
+    given: Mototaka
+  - family: Larkum
+    given: Matthew E.
+  container-title: Trends in Cognitive Sciences
+  volume: '24'
+  issue: '10'
+  page: 814-825
+  DOI: 10.1016/j.tics.2020.07.006
+  issued:
+    date-parts:
+    - - 2020
+- id: barnett2009
+  type: article-journal
+  title: Granger Causality and Transfer Entropy Are Equivalent for Gaussian Variables
+  author:
+  - family: Barnett
+    given: Lionel
+  - family: Barrett
+    given: Adam B.
+  - family: Seth
+    given: Anil K.
+  container-title: Physical Review Letters
+  volume: '103'
+  issue: '23'
+  DOI: 10.1103/physrevlett.103.238701
+  issued:
+    date-parts:
+    - - 2009
+- id: barnett2023
+  type: article-journal
+  title: 'Dynamical independence: Discovering emergent macroscopic processes in complex dynamical systems'
+  author:
+  - family: Barnett
+    given: L.
+  - family: Seth
+    given: A. K.
+  container-title: Physical Review E
+  volume: '108'
+  issue: '1'
+  DOI: 10.1103/physreve.108.014304
+  issued:
+    date-parts:
+    - - 2023
+- id: bastos2021
+  type: article-journal
+  title: Neural effects of propofol-induced unconsciousness and its reversal using thalamic stimulation
+  author:
+  - family: Bastos
+    given: André M
+  - family: Donoghue
+    given: Jacob A
+  - family: Brincat
+    given: Scott L
+  - family: Mahnke
+    given: Meredith
+  - family: Yanar
+    given: Jorge
+  - family: Correa
+    given: Josefina
+  - family: Waite
+    given: Ayan S
+  - family: Lundqvist
+    given: Mikael
+  - family: Roy
+    given: Jefferson
+  - family: Brown
+    given: Emery N
+  - family: Miller
+    given: Earl K
+  container-title: eLife
+  volume: '10'
+  DOI: 10.7554/elife.60824
+  issued:
+    date-parts:
+    - - 2021
+- id: bayne2016
+  type: article-journal
+  title: Are There Levels of Consciousness?
+  author:
+  - family: Bayne
+    given: Tim
+  - family: Hohwy
+    given: Jakob
+  - family: Owen
+    given: Adrian M.
+  container-title: Trends in Cognitive Sciences
+  volume: '20'
+  issue: '6'
+  page: 405-413
+  DOI: 10.1016/j.tics.2016.03.009
+  issued:
+    date-parts:
+    - - 2016
+- id: bayne2023
+  type: article-journal
+  title: 'Consciousness in the cradle: on the emergence of infant experience'
+  author:
+  - family: Bayne
+    given: Tim
+  - family: Frohlich
+    given: Joel
+  - family: Cusack
+    given: Rhodri
+  - family: Moser
+    given: Julia
+  - family: Naci
+    given: Lorina
+  container-title: Trends in Cognitive Sciences
+  volume: '27'
+  issue: '12'
+  page: 1135-1149
+  DOI: 10.1016/j.tics.2023.08.018
+  issued:
+    date-parts:
+    - - 2023
+- id: bayne2024
+  type: article-journal
+  title: Tests for consciousness in humans and beyond
+  author:
+  - family: Bayne
+    given: Tim
+  - family: Seth
+    given: Anil K.
+  - family: Massimini
+    given: Marcello
+  - family: Shepherd
+    given: Joshua
+  - family: Cleeremans
+    given: Axel
+  - family: Fleming
+    given: Stephen M.
+  - family: Malach
+    given: Rafael
+  - family: Mattingley
+    given: Jason B.
+  - family: Menon
+    given: David K.
+  - family: Owen
+    given: Adrian M.
+  - family: Peters
+    given: Megan A.K.
+  - family: Razi
+    given: Adeel
+  - family: Mudrik
+    given: Liad
+  container-title: Trends in Cognitive Sciences
+  volume: '28'
+  issue: '5'
+  page: 454-466
+  DOI: 10.1016/j.tics.2024.01.010
+  issued:
+    date-parts:
+    - - 2024
+- id: beggs2003
+  type: article-journal
+  title: Neuronal Avalanches in Neocortical Circuits
+  author:
+  - family: Beggs
+    given: John M.
+  - family: Plenz
+    given: Dietmar
+  container-title: The Journal of Neuroscience
+  volume: '23'
+  issue: '35'
+  page: 11167-11177
+  DOI: 10.1523/jneurosci.23-35-11167.2003
+  issued:
+    date-parts:
+    - - 2003
+- id: birch2020
+  type: article-journal
+  title: Dimensions of Animal Consciousness
+  author:
+  - family: Birch
+    given: Jonathan
+  - family: Schnell
+    given: Alexandra K.
+  - family: Clayton
+    given: Nicola S.
+  container-title: Trends in Cognitive Sciences
+  volume: '24'
+  issue: '10'
+  page: 789-801
+  DOI: 10.1016/j.tics.2020.07.007
+  issued:
+    date-parts:
+    - - 2020
+- id: blanke2012
+  type: article-journal
+  title: Multisensory brain mechanisms of bodily self-consciousness
+  author:
+  - family: Blanke
+    given: Olaf
+  container-title: Nature Reviews Neuroscience
+  volume: '13'
+  issue: '8'
+  page: 556-571
+  DOI: 10.1038/nrn3292
+  issued:
+    date-parts:
+    - - 2012
+- id: breyton2025
+  type: article-journal
+  title: Spatiotemporal brain complexity quantifies consciousness outside of perturbation paradigms
+  author:
+  - family: Breyton
+    given: Martin
+  - family: Fousek
+    given: Jan
+  - family: Rabuffo
+    given: Giovanni
+  - family: Sorrentino
+    given: Pierpaolo
+  - family: Kusch
+    given: Lionel
+  - family: Massimini
+    given: Marcello
+  - family: Petkoski
+    given: Spase
+  - family: Jirsa
+    given: Viktor
+  container-title: eLife
+  volume: '13'
+  DOI: 10.7554/elife.98920
+  issued:
+    date-parts:
+    - - 2025
+- id: brown2019
+  type: article-journal
+  title: Understanding the Higher-Order Approach to Consciousness
+  author:
+  - family: Brown
+    given: Richard
+  - family: Lau
+    given: Hakwan
+  - family: LeDoux
+    given: Joseph E.
+  container-title: Trends in Cognitive Sciences
+  volume: '23'
+  issue: '9'
+  page: 754-768
+  DOI: 10.1016/j.tics.2019.06.009
+  issued:
+    date-parts:
+    - - 2019
+- id: buzsaki2004
+  type: article-journal
+  title: Neuronal Oscillations in Cortical Networks
+  author:
+  - family: Buzsáki
+    given: György
+  - family: Draguhn
+    given: Andreas
+  container-title: Science
+  volume: '304'
+  issue: '5679'
+  page: 1926-1929
+  DOI: 10.1126/science.1099745
+  issued:
+    date-parts:
+    - - 2004
+- id: casali2013
+  type: article-journal
+  title: A Theoretically Based Index of Consciousness Independent of Sensory Processing and Behavior
+  author:
+  - family: Casali
+    given: Adenauer G.
+  - family: Gosseries
+    given: Olivia
+  - family: Rosanova
+    given: Mario
+  - family: Boly
+    given: Mélanie
+  - family: Sarasso
+    given: Simone
+  - family: Casali
+    given: Karina R.
+  - family: Casarotto
+    given: Silvia
+  - family: Bruno
+    given: Marie-Aurélie
+  - family: Laureys
+    given: Steven
+  - family: Tononi
+    given: Giulio
+  - family: Massimini
+    given: Marcello
+  container-title: Science Translational Medicine
+  volume: '5'
+  issue: '198'
+  DOI: 10.1126/scitranslmed.3006294
+  issued:
+    date-parts:
+    - - 2013
+- id: casarotto2016
+  type: article-journal
+  title: Stratification of unresponsive patients by an independently validated index of brain complexity
+  author:
+  - family: Casarotto
+    given: Silvia
+  - family: Comanducci
+    given: Angela
+  - family: Rosanova
+    given: Mario
+  - family: Sarasso
+    given: Simone
+  - family: Fecchio
+    given: Matteo
+  - family: Napolitani
+    given: Martino
+  - family: Pigorini
+    given: Andrea
+  - family: G. Casali
+    given: Adenauer
+  - family: Trimarchi
+    given: Pietro D.
+  - family: Boly
+    given: Melanie
+  - family: Gosseries
+    given: Olivia
+  - family: Bodart
+    given: Olivier
+  - family: Curto
+    given: Francesco
+  - family: Landi
+    given: Cristina
+  - family: Mariotti
+    given: Maurizio
+  - family: Devalle
+    given: Guya
+  - family: Laureys
+    given: Steven
+  - family: Tononi
+    given: Giulio
+  - family: Massimini
+    given: Marcello
+  container-title: Annals of Neurology
+  volume: '80'
+  issue: '5'
+  page: 718-729
+  DOI: 10.1002/ana.24779
+  issued:
+    date-parts:
+    - - 2016
+- id: clopper1934
+  type: article-journal
+  title: The use of confidence or fiducial limits illustrated in the case of the binomial
+  author:
+  - family: Clopper
+    given: C. J.
+  - family: Pearson
+    given: E. S.
+  container-title: Biometrika
+  volume: '26'
+  issue: '4'
+  page: 404-413
+  DOI: 10.1093/biomet/26.4.404
+  issued:
+    date-parts:
+    - - 1934
+- id: cogitate2025
+  type: article-journal
+  title: Adversarial testing of global neuronal workspace and integrated information theories of consciousness
+  author:
+  - literal: Cogitate Consortium
+  - family: Ferrante
+    given: Oscar
+  - family: Gorska-Klimowska
+    given: Urszula
+  - family: Henin
+    given: Simon
+  - family: Hirschhorn
+    given: Rony
+  - family: Khalaf
+    given: Aya
+  - family: Lepauvre
+    given: Alex
+  - family: Liu
+    given: Ling
+  - family: Richter
+    given: David
+  - family: Vidal
+    given: Yamil
+  - family: Bonacchi
+    given: Niccolò
+  - family: Brown
+    given: Tanya
+  - family: Sripad
+    given: Praveen
+  - family: Armendariz
+    given: Marcelo
+  - family: Bendtz
+    given: Katarina
+  - family: Ghafari
+    given: Tara
+  - family: Hetenyi
+    given: Dorottya
+  - family: Jeschke
+    given: Jay
+  - family: Kozma
+    given: Csaba
+  - family: Mazumder
+    given: David R.
+  - family: Montenegro
+    given: Stephanie
+  - family: Seedat
+    given: Alia
+  - family: Sharafeldin
+    given: Abdelrahman
+  - family: Yang
+    given: Shujun
+  - family: Baillet
+    given: Sylvain
+  - family: Chalmers
+    given: David J.
+  - family: Cichy
+    given: Radoslaw M.
+  - family: Fallon
+    given: Francis
+  - family: Panagiotaropoulos
+    given: Theofanis I.
+  - family: Blumenfeld
+    given: Hal
+  - family: de Lange
+    given: Floris P.
+  - family: Devore
+    given: Sasha
+  - family: Jensen
+    given: Ole
+  - family: Kreiman
+    given: Gabriel
+  - family: Luo
+    given: Huan
+  - family: Boly
+    given: Melanie
+  - family: Dehaene
+    given: Stanislas
+  - family: Koch
+    given: Christof
+  - family: Tononi
+    given: Giulio
+  - family: Pitts
+    given: Michael
+  - family: Mudrik
+    given: Liad
+  - family: Melloni
+    given: Lucia
+  container-title: Nature
+  volume: '642'
+  issue: '8066'
+  page: 133-142
+  DOI: 10.1038/s41586-025-08888-1
+  issued:
+    date-parts:
+    - - 2025
+- id: comolatti2019
+  type: article-journal
+  title: A fast and general method to empirically estimate the complexity of brain responses to transcranial
+    and intracranial stimulations
+  author:
+  - family: Comolatti
+    given: Renzo
+  - family: Pigorini
+    given: Andrea
+  - family: Casarotto
+    given: Silvia
+  - family: Fecchio
+    given: Matteo
+  - family: Faria
+    given: Guilherme
+  - family: Sarasso
+    given: Simone
+  - family: Rosanova
+    given: Mario
+  - family: Gosseries
+    given: Olivia
+  - family: Boly
+    given: Mélanie
+  - family: Bodart
+    given: Olivier
+  - family: Ledoux
+    given: Didier
+  - family: Brichant
+    given: Jean-François
+  - family: Nobili
+    given: Lino
+  - family: Laureys
+    given: Steven
+  - family: Tononi
+    given: Giulio
+  - family: Massimini
+    given: Marcello
+  - family: Casali
+    given: Adenauer G.
+  container-title: Brain Stimulation
+  volume: '12'
+  issue: '5'
+  page: 1280-1289
+  DOI: 10.1016/j.brs.2019.05.013
+  issued:
+    date-parts:
+    - - 2019
+- id: cover2006
+  type: book
+  title: Elements of Information Theory
+  author:
+  - family: Cover
+    given: Thomas M.
+  - family: Thomas
+    given: Joy A.
+  publisher: Wiley
+  DOI: 10.1002/047174882x
+  issued:
+    date-parts:
+    - - 2006
+  edition: '2'
+- id: cruddas2026
+  type: article-journal
+  title: 'Cortical traveling waves in time and space: Physics, physiology, and psychology'
+  author:
+  - family: Cruddas
+    given: Jace
+  - family: Pang
+    given: James C.
+  - family: Fornito
+    given: Alex
+  container-title: Neuron
+  volume: '114'
+  issue: '6'
+  page: 985-1005
+  DOI: 10.1016/j.neuron.2025.12.019
+  issued:
+    date-parts:
+    - - 2026
+- id: david2003
+  type: book
+  title: Order Statistics
+  author:
+  - family: David
+    given: H. A.
+  - family: Nagaraja
+    given: H. N.
+  publisher: Wiley
+  DOI: 10.1002/0471722162
+  issued:
+    date-parts:
+    - - 2003
+  edition: '3'
+- id: davis1970
+  type: article-journal
+  title: The Rotation of Eigenvectors by a Perturbation. III
+  author:
+  - family: Davis
+    given: Chandler
+  - family: Kahan
+    given: W. M.
+  container-title: SIAM Journal on Numerical Analysis
+  volume: '7'
+  issue: '1'
+  page: 1-46
+  DOI: 10.1137/0707001
+  issued:
+    date-parts:
+    - - 1970
+- id: dehaene2011
+  type: article-journal
+  title: Experimental and Theoretical Approaches to Conscious Processing
+  author:
+  - family: Dehaene
+    given: Stanislas
+  - family: Changeux
+    given: Jean-Pierre
+  container-title: Neuron
+  volume: '70'
+  issue: '2'
+  page: 200-227
+  DOI: 10.1016/j.neuron.2011.03.018
+  issued:
+    date-parts:
+    - - 2011
+- id: derrien2022
+  type: article-journal
+  title: 'The nature of blindsight: implications for current theories of consciousness'
+  author:
+  - family: Derrien
+    given: Diane
+  - family: Garric
+    given: Clémentine
+  - family: Sergent
+    given: Claire
+  - family: Chokron
+    given: Sylvie
+  container-title: Neuroscience of Consciousness
+  volume: '2022'
+  issue: '1'
+  DOI: 10.1093/nc/niab043
+  issued:
+    date-parts:
+    - - 2022
+- id: dunnett1955
+  type: article-journal
+  title: Approximations to the probability integral and certain percentage points of a multivariate analogue
+    of Student's t-distribution
+  author:
+  - family: Dunnett
+    given: C. W.
+  - family: Sobel
+    given: M.
+  container-title: Biometrika
+  volume: '42'
+  issue: 1-2
+  page: 258-267
+  DOI: 10.1093/biomet/42.1-2.258
+  issued:
+    date-parts:
+    - - 1955
+- id: fleming2026
+  type: article-journal
+  title: Towards an integrative neuroscience of metacognition
+  author:
+  - family: Fleming
+    given: Stephen M.
+  container-title: Nature Reviews Neuroscience
+  DOI: 10.1038/s41583-026-01081-x
+  issued:
+    date-parts:
+    - - 2026
+- id: fries2015
+  type: article-journal
+  title: 'Rhythms for Cognition: Communication through Coherence'
+  author:
+  - family: Fries
+    given: Pascal
+  container-title: Neuron
+  volume: '88'
+  issue: '1'
+  page: 220-235
+  DOI: 10.1016/j.neuron.2015.09.034
+  issued:
+    date-parts:
+    - - 2015
+- id: gardier2024
+  type: article-journal
+  title: The developmental path of metacognition from toddlerhood to early childhood and its influence
+    on later memory performance
+  author:
+  - family: Gardier
+    given: Marion
+  - family: Geurten
+    given: Marie
+  container-title: Developmental Psychology
+  volume: '60'
+  issue: '7'
+  page: 1244-1254
+  DOI: 10.1037/dev0001752
+  issued:
+    date-parts:
+    - - 2024
+- id: huang2024
+  type: article-journal
+  title: Propofol disrupts the functional core-matrix architecture of the thalamus in humans
+  author:
+  - family: Huang
+    given: Zirui
+  - family: Mashour
+    given: George A.
+  - family: Hudetz
+    given: Anthony G.
+  container-title: Nature Communications
+  volume: '15'
+  issue: '1'
+  DOI: 10.1038/s41467-024-51837-1
+  issued:
+    date-parts:
+    - - 2024
+- id: hudetz2015
+  type: article-journal
+  title: Dynamic Repertoire of Intrinsic Brain States Is Reduced in Propofol-Induced Unconsciousness
+  author:
+  - family: Hudetz
+    given: Anthony G.
+  - family: Liu
+    given: Xiping
+  - family: Pillay
+    given: Siveshigan
+  container-title: Brain Connectivity
+  volume: '5'
+  issue: '1'
+  page: 10-22
+  DOI: 10.1089/brain.2014.0230
+  issued:
+    date-parts:
+    - - 2015
+- id: killip2004
+  type: article-journal
+  title: What Is an Intracluster Correlation Coefficient? Crucial Concepts for Primary Care Researchers
+  author:
+  - family: Killip
+    given: S.
+  - family: Mahfoud
+    given: Z.
+  - family: Pearce
+    given: K.
+  container-title: The Annals of Family Medicine
+  volume: '2'
+  issue: '3'
+  page: 204-208
+  DOI: 10.1370/afm.141
+  issued:
+    date-parts:
+    - - 2004
+- id: kish1965
+  type: book
+  title: Survey Sampling
+  author:
+  - family: Kish
+    given: Leslie
+  publisher: Wiley
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1965
+- id: kleiner2026
+  type: article-journal
+  title: Defining biological naturalism
+  author:
+  - family: Kleiner
+    given: Johannes
+  container-title: Behavioral and Brain Sciences
+  volume: '49'
+  DOI: 10.1017/s0140525x25103853
+  issued:
+    date-parts:
+    - - 2026
+- id: koch2016
+  type: article-journal
+  title: 'Neural correlates of consciousness: progress and problems'
+  author:
+  - family: Koch
+    given: Christof
+  - family: Massimini
+    given: Marcello
+  - family: Boly
+    given: Melanie
+  - family: Tononi
+    given: Giulio
+  container-title: Nature Reviews Neuroscience
+  volume: '17'
+  issue: '5'
+  page: 307-321
+  DOI: 10.1038/nrn.2016.22
+  issued:
+    date-parts:
+    - - 2016
+- id: lamme2006
+  type: article-journal
+  title: Towards a true neural stance on consciousness
+  author:
+  - family: Lamme
+    given: Victor A.F.
+  container-title: Trends in Cognitive Sciences
+  volume: '10'
+  issue: '11'
+  page: 494-501
+  DOI: 10.1016/j.tics.2006.09.001
+  issued:
+    date-parts:
+    - - 2006
+- id: lane2026
+  type: article-journal
+  title: A link between consciousness and the wetware of metabolism
+  author:
+  - family: Lane
+    given: Nick
+  container-title: Behavioral and Brain Sciences
+  volume: '49'
+  DOI: 10.1017/s0140525x25103658
+  issued:
+    date-parts:
+    - - 2026
+- id: larkum2013
+  type: article-journal
+  title: 'A cellular mechanism for cortical associations: an organizing principle for the cerebral cortex'
+  author:
+  - family: Larkum
+    given: Matthew
+  container-title: Trends in Neurosciences
+  volume: '36'
+  issue: '3'
+  page: 141-151
+  DOI: 10.1016/j.tins.2012.11.006
+  issued:
+    date-parts:
+    - - 2013
+- id: lempel1976
+  type: article-journal
+  title: On the Complexity of Finite Sequences
+  author:
+  - family: Lempel
+    given: A.
+  - family: Ziv
+    given: J.
+  container-title: IEEE Transactions on Information Theory
+  volume: '22'
+  issue: '1'
+  page: 75-81
+  DOI: 10.1109/tit.1976.1055501
+  issued:
+    date-parts:
+    - - 1976
+- id: lundqvist2016
+  type: article-journal
+  title: Gamma and Beta Bursts Underlie Working Memory
+  author:
+  - family: Lundqvist
+    given: Mikael
+  - family: Rose
+    given: Jonas
+  - family: Herman
+    given: Pawel
+  - family: Brincat
+    given: Scott L.
+  - family: Buschman
+    given: Timothy J.
+  - family: Miller
+    given: Earl K.
+  container-title: Neuron
+  volume: '90'
+  issue: '1'
+  page: 152-164
+  DOI: 10.1016/j.neuron.2016.02.028
+  issued:
+    date-parts:
+    - - 2016
+- id: lundqvist2024
+  type: article-journal
+  title: 'Beta: bursts of cognition'
+  author:
+  - family: Lundqvist
+    given: Mikael
+  - family: Miller
+    given: Earl K.
+  - family: Nordmark
+    given: Jonatan
+  - family: Liljefors
+    given: Johan
+  - family: Herman
+    given: Pawel
+  container-title: Trends in Cognitive Sciences
+  volume: '28'
+  issue: '7'
+  page: 662-676
+  DOI: 10.1016/j.tics.2024.03.010
+  issued:
+    date-parts:
+    - - 2024
+- id: luppi2024
+  type: article-journal
+  title: Local orchestration of distributed functional patterns supporting loss and restoration of consciousness
+    in the primate brain
+  author:
+  - family: Luppi
+    given: Andrea I.
+  - family: Uhrig
+    given: Lynn
+  - family: Tasserie
+    given: Jordy
+  - family: Signorelli
+    given: Camilo M.
+  - family: Stamatakis
+    given: Emmanuel A.
+  - family: Destexhe
+    given: Alain
+  - family: Jarraya
+    given: Bechir
+  - family: Cofre
+    given: Rodrigo
+  container-title: Nature Communications
+  volume: '15'
+  issue: '1'
+  DOI: 10.1038/s41467-024-46382-w
+  issued:
+    date-parts:
+    - - 2024
+- id: lutkepohl2005
+  type: book
+  title: New Introduction to Multiple Time Series Analysis
+  author:
+  - family: Lütkepohl
+    given: Helmut
+  publisher: Springer
+  DOI: 10.1007/978-3-540-27752-1
+  issued:
+    date-parts:
+    - - 2005
+- id: maschke2024
+  type: article-journal
+  title: Critical dynamics in spontaneous EEG predict anesthetic-induced loss of consciousness and perturbational
+    complexity
+  author:
+  - family: Maschke
+    given: Charlotte
+  - family: O’Byrne
+    given: Jordan
+  - family: Colombo
+    given: Michele Angelo
+  - family: Boly
+    given: Melanie
+  - family: Gosseries
+    given: Olivia
+  - family: Laureys
+    given: Steven
+  - family: Rosanova
+    given: Mario
+  - family: Jerbi
+    given: Karim
+  - family: Blain-Moraes
+    given: Stefanie
+  container-title: Communications Biology
+  volume: '7'
+  issue: '1'
+  DOI: 10.1038/s42003-024-06613-8
+  issued:
+    date-parts:
+    - - 2024
+- id: mashour2020
+  type: article-journal
+  title: Conscious Processing and the Global Neuronal Workspace Hypothesis
+  author:
+  - family: Mashour
+    given: George A.
+  - family: Roelfsema
+    given: Pieter
+  - family: Changeux
+    given: Jean-Pierre
+  - family: Dehaene
+    given: Stanislas
+  container-title: Neuron
+  volume: '105'
+  issue: '5'
+  page: 776-798
+  DOI: 10.1016/j.neuron.2020.01.026
+  issued:
+    date-parts:
+    - - 2020
+- id: massimini2005
+  type: article-journal
+  title: Breakdown of Cortical Effective Connectivity During Sleep
+  author:
+  - family: Massimini
+    given: Marcello
+  - family: Ferrarelli
+    given: Fabio
+  - family: Huber
+    given: Reto
+  - family: Esser
+    given: Steve K.
+  - family: Singh
+    given: Harpreet
+  - family: Tononi
+    given: Giulio
+  container-title: Science
+  volume: '309'
+  issue: '5744'
+  page: 2228-2232
+  DOI: 10.1126/science.1117256
+  issued:
+    date-parts:
+    - - 2005
+- id: mcnemar1947
+  type: article-journal
+  title: Note on the Sampling Error of the Difference Between Correlated Proportions or Percentages
+  author:
+  - family: McNemar
+    given: Quinn
+  container-title: Psychometrika
+  volume: '12'
+  issue: '2'
+  page: 153-157
+  DOI: 10.1007/bf02295996
+  issued:
+    date-parts:
+    - - 1947
+- id: milinkovic2026
+  type: article-journal
+  title: Emergent multiscale organisation of neural dynamics fragments in anaesthesia
+  author:
+  - family: Milinkovic
+    given: Borjan
+  - family: Seth
+    given: Anil K.
+  - family: Barnett
+    given: Lionel
+  - family: Carter
+    given: Olivia
+  - family: Andrillon
+    given: Thomas
+  container-title: Imaging Neuroscience
+  volume: '4'
+  DOI: 10.1162/imag.a.1364
+  issued:
+    date-parts:
+    - - 2026
+- id: muller2018
+  type: article-journal
+  title: 'Cortical travelling waves: mechanisms and computational principles'
+  author:
+  - family: Muller
+    given: Lyle
+  - family: Chavane
+    given: Frédéric
+  - family: Reynolds
+    given: John
+  - family: Sejnowski
+    given: Terrence J.
+  container-title: Nature Reviews Neuroscience
+  volume: '19'
+  issue: '5'
+  page: 255-268
+  DOI: 10.1038/nrn.2018.20
+  issued:
+    date-parts:
+    - - 2018
+- id: nartallo2026
+  type: article-journal
+  title: Nonequilibrium physics of brain dynamics
+  author:
+  - family: Nartallo-Kaluarachchi
+    given: Ramón
+  - family: Kringelbach
+    given: Morten
+  - family: Deco
+    given: Gustavo
+  - family: Lambiotte
+    given: Renaud
+  - family: Goriely
+    given: Alain
+  container-title: Physics Reports
+  volume: '1152'
+  page: 1-43
+  DOI: 10.1016/j.physrep.2025.10.003
+  issued:
+    date-parts:
+    - - 2026
+- id: obyrne2022
+  type: article-journal
+  title: How critical is brain criticality?
+  author:
+  - family: O’Byrne
+    given: Jordan
+  - family: Jerbi
+    given: Karim
+  container-title: Trends in Neurosciences
+  volume: '45'
+  issue: '11'
+  page: 820-837
+  DOI: 10.1016/j.tins.2022.08.007
+  issued:
+    date-parts:
+    - - 2022
+- id: passosferreira2024
+  type: article-journal
+  title: Can we detect consciousness in newborn infants?
+  author:
+  - family: Passos-Ferreira
+    given: Claudia
+  container-title: Neuron
+  volume: '112'
+  issue: '10'
+  page: 1520-1523
+  DOI: 10.1016/j.neuron.2024.04.024
+  issued:
+    date-parts:
+    - - 2024
+- id: priesemann2013
+  type: article-journal
+  title: Neuronal Avalanches Differ from Wakefulness to Deep Sleep – Evidence from Intracranial Depth
+    Recordings in Humans
+  author:
+  - family: Priesemann
+    given: Viola
+  - family: Valderrama
+    given: Mario
+  - family: Wibral
+    given: Michael
+  - family: Le Van Quyen
+    given: Michel
+  container-title: PLoS Computational Biology
+  volume: '9'
+  issue: '3'
+  page: e1002985
+  DOI: 10.1371/journal.pcbi.1002985
+  issued:
+    date-parts:
+    - - 2013
+- id: radek2018
+  type: article-journal
+  title: Dreaming and awareness during dexmedetomidine- and propofol-induced unresponsiveness
+  author:
+  - family: Radek
+    given: L.
+  - family: Kallionpää
+    given: R.E.
+  - family: Karvonen
+    given: M.
+  - family: Scheinin
+    given: A.
+  - family: Maksimow
+    given: A.
+  - family: Långsjö
+    given: J.
+  - family: Kaisti
+    given: K.
+  - family: Vahlberg
+    given: T.
+  - family: Revonsuo
+    given: A.
+  - family: Scheinin
+    given: H.
+  - family: Valli
+    given: K.
+  container-title: British Journal of Anaesthesia
+  volume: '121'
+  issue: '1'
+  page: 260-269
+  DOI: 10.1016/j.bja.2018.03.014
+  issued:
+    date-parts:
+    - - 2018
+- id: redinbaugh2020
+  type: article-journal
+  title: Thalamus Modulates Consciousness via Layer-Specific Control of Cortex
+  author:
+  - family: Redinbaugh
+    given: Michelle J.
+  - family: Phillips
+    given: Jessica M.
+  - family: Kambi
+    given: Niranjan A.
+  - family: Mohanta
+    given: Sounak
+  - family: Andryk
+    given: Samantha
+  - family: Dooley
+    given: Gaven L.
+  - family: Afrasiabi
+    given: Mohsen
+  - family: Raz
+    given: Aeyal
+  - family: Saalmann
+    given: Yuri B.
+  container-title: Neuron
+  volume: '106'
+  issue: '1'
+  page: 66-75.e12
+  DOI: 10.1016/j.neuron.2020.01.005
+  issued:
+    date-parts:
+    - - 2020
+- id: rodriguez2025
+  type: article-journal
+  title: Anaesthetics disrupt complex I-linked respiration and reverse the ATP synthase
+  author:
+  - family: Rodriguez
+    given: Enrique
+  - family: Peng
+    given: Bella
+  - family: Lane
+    given: Nick
+  container-title: Biochimica et Biophysica Acta (BBA) - Bioenergetics
+  volume: '1866'
+  issue: '1'
+  page: '149511'
+  DOI: 10.1016/j.bbabio.2024.149511
+  issued:
+    date-parts:
+    - - 2025
+- id: rogan1978
+  type: article-journal
+  title: Estimating prevalence from the results of a screening test
+  author:
+  - family: Rogan
+    given: Walter J.
+  - family: Gladen
+    given: Beth
+  container-title: American Journal of Epidemiology
+  volume: '107'
+  issue: '1'
+  page: 71-76
+  DOI: 10.1093/oxfordjournals.aje.a112510
+  issued:
+    date-parts:
+    - - 1978
+- id: rosas2020
+  type: article-journal
+  title: 'Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate
+    data'
+  author:
+  - family: Rosas
+    given: Fernando E.
+  - family: Mediano
+    given: Pedro A. M.
+  - family: Jensen
+    given: Henrik J.
+  - family: Seth
+    given: Anil K.
+  - family: Barrett
+    given: Adam B.
+  - family: Carhart-Harris
+    given: Robin L.
+  - family: Bor
+    given: Daniel
+  container-title: PLOS Computational Biology
+  volume: '16'
+  issue: '12'
+  page: e1008289
+  DOI: 10.1371/journal.pcbi.1008289
+  issued:
+    date-parts:
+    - - 2020
+- id: sandi2026
+  type: article-journal
+  title: Brain mitochondria as key drivers of cognition and behaviour
+  author:
+  - family: Sandi
+    given: Carmen
+  - family: Lobo
+    given: Mary Kay
+  - family: Hollis
+    given: Fiona
+  - family: Hirabayashi
+    given: Yusuke
+  - family: de Juan-Sanz
+    given: Jaime
+  - family: Bolaños
+    given: Juan P.
+  container-title: Nature Reviews Neuroscience
+  volume: '27'
+  issue: '9'
+  page: 618-636
+  DOI: 10.1038/s41583-026-01061-1
+  issued:
+    date-parts:
+    - - 2026
+- id: sarasso2015
+  type: article-journal
+  title: Consciousness and Complexity during Unresponsiveness Induced by Propofol, Xenon, and Ketamine
+  author:
+  - family: Sarasso
+    given: Simone
+  - family: Boly
+    given: Melanie
+  - family: Napolitani
+    given: Martino
+  - family: Gosseries
+    given: Olivia
+  - family: Charland-Verville
+    given: Vanessa
+  - family: Casarotto
+    given: Silvia
+  - family: Rosanova
+    given: Mario
+  - family: Casali
+    given: Adenauer Girardi
+  - family: Brichant
+    given: Jean-Francois
+  - family: Boveroux
+    given: Pierre
+  - family: Rex
+    given: Steffen
+  - family: Tononi
+    given: Giulio
+  - family: Laureys
+    given: Steven
+  - family: Massimini
+    given: Marcello
+  container-title: Current Biology
+  volume: '25'
+  issue: '23'
+  page: 3099-3105
+  DOI: 10.1016/j.cub.2015.10.014
+  issued:
+    date-parts:
+    - - 2015
+- id: serino2013
+  type: article-journal
+  title: 'Bodily ownership and self-location: Components of bodily self-consciousness'
+  author:
+  - family: Serino
+    given: Andrea
+  - family: Alsmith
+    given: Adrian
+  - family: Costantini
+    given: Marcello
+  - family: Mandrigin
+    given: Alisa
+  - family: Tajadura-Jimenez
+    given: Ana
+  - family: Lopez
+    given: Christophe
+  container-title: Consciousness and Cognition
+  volume: '22'
+  issue: '4'
+  page: 1239-1252
+  DOI: 10.1016/j.concog.2013.08.013
+  issued:
+    date-parts:
+    - - 2013
+- id: seth2022
+  type: article-journal
+  title: Theories of consciousness
+  author:
+  - family: Seth
+    given: Anil K.
+  - family: Bayne
+    given: Tim
+  container-title: Nature Reviews Neuroscience
+  volume: '23'
+  issue: '7'
+  page: 439-452
+  DOI: 10.1038/s41583-022-00587-4
+  issued:
+    date-parts:
+    - - 2022
+- id: seth2025
+  type: article-journal
+  title: Conscious artificial intelligence and biological naturalism
+  author:
+  - family: Seth
+    given: Anil K.
+  container-title: Behavioral and Brain Sciences
+  volume: '49'
+  DOI: 10.1017/s0140525x25000032
+  issued:
+    date-parts:
+    - - 2025
+- id: siclari2017
+  type: article-journal
+  title: The neural correlates of dreaming
+  author:
+  - family: Siclari
+    given: Francesca
+  - family: Baird
+    given: Benjamin
+  - family: Perogamvros
+    given: Lampros
+  - family: Bernardi
+    given: Giulio
+  - family: LaRocque
+    given: Joshua J
+  - family: Riedner
+    given: Brady
+  - family: Boly
+    given: Melanie
+  - family: Postle
+    given: Bradley R
+  - family: Tononi
+    given: Giulio
+  container-title: Nature Neuroscience
+  volume: '20'
+  issue: '6'
+  page: 872-878
+  DOI: 10.1038/nn.4545
+  issued:
+    date-parts:
+    - - 2017
+- id: sikka2026
+  type: article-journal
+  title: 'Dreaming during anaesthesia: a scoping review'
+  author:
+  - family: Sikka
+    given: Pilleriin
+  - family: Hu
+    given: Sherry
+  - family: Heifets
+    given: Boris D.
+  container-title: British Journal of Anaesthesia
+  volume: '137'
+  issue: '2'
+  page: 506-524
+  DOI: 10.1016/j.bja.2026.05.002
+  issued:
+    date-parts:
+    - - 2026
+- id: stewart1973
+  type: article-journal
+  title: Error and Perturbation Bounds for Subspaces Associated with Certain Eigenvalue Problems
+  author:
+  - family: Stewart
+    given: G. W.
+  container-title: SIAM Review
+  volume: '15'
+  issue: '4'
+  page: 727-764
+  DOI: 10.1137/1015095
+  issued:
+    date-parts:
+    - - 1973
+- id: storm2024
+  type: article-journal
+  title: An integrative, multiscale view on neural theories of consciousness
+  author:
+  - family: Storm
+    given: Johan F.
+  - family: Klink
+    given: P. Christiaan
+  - family: Aru
+    given: Jaan
+  - family: Senn
+    given: Walter
+  - family: Goebel
+    given: Rainer
+  - family: Pigorini
+    given: Andrea
+  - family: Avanzini
+    given: Pietro
+  - family: Vanduffel
+    given: Wim
+  - family: Roelfsema
+    given: Pieter R.
+  - family: Massimini
+    given: Marcello
+  - family: Larkum
+    given: Matthew E.
+  - family: Pennartz
+    given: Cyriel M.A.
+  container-title: Neuron
+  volume: '112'
+  issue: '10'
+  page: 1531-1552
+  DOI: 10.1016/j.neuron.2024.02.004
+  issued:
+    date-parts:
+    - - 2024
+- id: suzuki2020
+  type: article-journal
+  title: General Anesthesia Decouples Cortical Pyramidal Neurons
+  author:
+  - family: Suzuki
+    given: Mototaka
+  - family: Larkum
+    given: Matthew E.
+  container-title: Cell
+  volume: '180'
+  issue: '4'
+  page: 666-676.e13
+  DOI: 10.1016/j.cell.2020.01.024
+  issued:
+    date-parts:
+    - - 2020
+- id: tagliazucchi2016
+  type: article-journal
+  title: Large-scale signatures of unconsciousness are consistent with a departure from critical dynamics
+  author:
+  - family: Tagliazucchi
+    given: Enzo
+  - family: Chialvo
+    given: Dante R.
+  - family: Siniatchkin
+    given: Michael
+  - family: Amico
+    given: Enrico
+  - family: Brichant
+    given: Jean-Francois
+  - family: Bonhomme
+    given: Vincent
+  - family: Noirhomme
+    given: Quentin
+  - family: Laufs
+    given: Helmut
+  - family: Laureys
+    given: Steven
+  container-title: Journal of The Royal Society Interface
+  volume: '13'
+  issue: '114'
+  page: '20151027'
+  DOI: 10.1098/rsif.2015.1027
+  issued:
+    date-parts:
+    - - 2016
+- id: tononi1998
+  type: article-journal
+  title: Consciousness and Complexity
+  author:
+  - family: Tononi
+    given: Giulio
+  - family: Edelman
+    given: Gerald M.
+  container-title: Science
+  volume: '282'
+  issue: '5395'
+  page: 1846-1851
+  DOI: 10.1126/science.282.5395.1846
+  issued:
+    date-parts:
+    - - 1998
+- id: tort2025
+  type: article-journal
+  title: Global coordination of brain activity by the breathing cycle
+  author:
+  - family: Tort
+    given: Adriano B. L.
+  - family: Laplagne
+    given: Diego A.
+  - family: Draguhn
+    given: Andreas
+  - family: Gonzalez
+    given: Joaquin
+  container-title: Nature Reviews Neuroscience
+  volume: '26'
+  issue: '6'
+  page: 333-353
+  DOI: 10.1038/s41583-025-00920-7
+  issued:
+    date-parts:
+    - - 2025
+- id: touboul2017
+  type: article-journal
+  title: Power-law statistics and universal scaling in the absence of criticality
+  author:
+  - family: Touboul
+    given: Jonathan
+  - family: Destexhe
+    given: Alain
+  container-title: Physical Review E
+  volume: '95'
+  issue: '1'
+  DOI: 10.1103/physreve.95.012413
+  issued:
+    date-parts:
+    - - 2017
+- id: whyte2024
+  type: article-journal
+  title: Thalamic contributions to the state and contents of consciousness
+  author:
+  - family: Whyte
+    given: Christopher J.
+  - family: Redinbaugh
+    given: Michelle J.
+  - family: Shine
+    given: James M.
+  - family: Saalmann
+    given: Yuri B.
+  container-title: Neuron
+  volume: '112'
+  issue: '10'
+  page: 1611-1625
+  DOI: 10.1016/j.neuron.2024.04.019
+  issued:
+    date-parts:
+    - - 2024
+- id: wilting2019
+  type: article-journal
+  title: 25 years of criticality in neuroscience — established results, open controversies, novel concepts
+  author:
+  - family: Wilting
+    given: Jens
+  - family: Priesemann
+    given: Viola
+  container-title: Current Opinion in Neurobiology
+  volume: '58'
+  page: 105-111
+  DOI: 10.1016/j.conb.2019.08.002
+  issued:
+    date-parts:
+    - - 2019
+- id: zhao2024
+  type: article-journal
+  title: Astrocytes Modulate a Specific Paraventricular Thalamus to Prefrontal Cortex Projection to Enhance
+    Consciousness Recovery from Anesthesia
+  author:
+  - family: Zhao
+    given: Yi
+  - family: Ou
+    given: Mengchan
+  - family: Liu
+    given: Jin
+  - family: Jiang
+    given: Jingyao
+  - family: Zhang
+    given: Donghang
+  - family: Ke
+    given: Bowen
+  - family: Wu
+    given: Yujie
+  - family: Chen
+    given: Yali
+  - family: Jiang
+    given: Ruotian
+  - family: Hemmings
+    given: Hugh C.
+  - family: Zhu
+    given: Tao
+  - family: Zhou
+    given: Cheng
+  container-title: The Journal of Neuroscience
+  volume: '44'
+  issue: '34'
+  page: e1808232024
+  DOI: 10.1523/jneurosci.1808-23.2024
+  issued:
+    date-parts:
+    - - 2024
+- id: zhou2025
+  type: article-journal
+  title: Astrocyte morphological remodeling regulates consciousness state transitions induced by inhaled
+    general anesthesia
+  author:
+  - family: Zhou
+    given: Bin
+  - family: Li
+    given: Qingran
+  - family: Su
+    given: Mengchan
+  - family: Liao
+    given: Ping
+  - family: Luo
+    given: Yuncheng
+  - family: Luo
+    given: Rong
+  - family: Yu
+    given: Yunqing
+  - family: Luo
+    given: Meiyan
+  - family: Lei
+    given: Fan
+  - family: Li
+    given: Xin
+  - family: Jiao
+    given: Jiao
+  - family: Yi
+    given: Limei
+  - family: Wang
+    given: Jing
+  - family: Yang
+    given: Linghui
+  - family: Liao
+    given: Daqing
+  - family: Zhou
+    given: Cheng
+  - family: Zhang
+    given: Xia
+  - family: Xiao
+    given: Hong
+  - family: Zuo
+    given: Yunxia
+  - family: Liu
+    given: Jin
+  - family: Zhu
+    given: Tao
+  - family: Jiang
+    given: Ruotian
+  container-title: Molecular Psychiatry
+  volume: '30'
+  issue: '9'
+  page: 4006-4022
+  DOI: 10.1038/s41380-025-02978-2
+  issued:
+    date-parts:
+    - - 2025

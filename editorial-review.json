@@ -1,0 +1,10 @@
+{
+  "manuscript_sha256": "dbc8507769648967785ee5c6b41de5dafad516997e2b335e159acb1ca466240a",
+  "full_read": true,
+  "argument_review": true,
+  "structure_review": true,
+  "voice_review": true,
+  "source_review": true,
+  "final_read": true,
+  "notes": "Full read of the final manuscript: argument (regime as a testable conjunction; estimators, non-redundancy, conjunctive statistics, experiment), structure (estimators, atlas, ensemble, controllers, statistics, MCR-1, limits), voice (no em-dashes, signature words reduced, numerals), sources (every literature sentence checked against an abstract; Hudetz 2015 is a rat study; PCI cutoff not quoted). See editorial.md."
+}
